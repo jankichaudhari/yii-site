@@ -1,0 +1,36 @@
+/* Style for docroot\protected\views\blog\index.php */
+.blog-listings{
+  .row{
+    &.box{
+      width: 100%;
+      padding: 12px;
+      .box-sizing();
+    }
+    .overlay-row, .orange-big-heading{
+      width: 100%;
+      .overlay-cell{
+        background-color: @white;
+      }
+    }
+  }
+
+  .body{
+    .empty{
+      padding-top: 12px;
+    }
+  }
+}
+
+/* Style for docroot\protected\views\blog\detailsView.php */
+.blog-details {
+  .detail-page-content {
+      .description-content{
+        .separate-block();
+        padding: 24px 12px;
+      }
+
+    .contact-us-widget{
+      .hide();
+    }
+  }
+}

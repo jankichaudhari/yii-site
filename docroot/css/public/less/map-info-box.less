@@ -1,0 +1,133 @@
+.map-wrap{
+  .map-canvas {
+    float             : left;
+    width             : 100%;
+    height            : 100%;
+    position          : relative;
+    overflow          : hidden;
+    -webkit-transform : translateZ(0);
+
+    .infoBox {
+      background-color : @white;
+      border           : 3px solid @orange;
+      .box-shadow(2px 2px 4px #888888);
+      position         : relative;
+
+      .info-box-view {
+        .clearfix();
+
+        .info-row {
+          margin : 4px 0;
+        }
+
+        .thumbnail {
+          .displayFloat();
+        }
+
+        .info {
+          .displayFloat();
+          padding : 4px 0px 4px 8px;
+
+          .title {
+            .text-14;
+            font-weight : bold;
+          }
+
+          .subtitle {
+            .text-12;
+          }
+
+          .strapline {
+            .text-12;
+            line-height : 16px;
+          }
+        }
+
+        &.property, &.local-event {
+          .size(338px, 146px);
+          .thumbnail {
+            .square(146px);
+            img{
+              width: 146px;
+            }
+          }
+          .info {
+            .size(164px, 138px);
+            .strapline {
+              height : 92px;
+            }
+          }
+        }
+
+        &.property{
+          .subtitle {
+            .price{
+              font-weight : bold;
+            }
+            .qualifier{
+              text-transform : uppercase;
+            }
+            .status{
+              color: @orange;
+              font-style: italic;
+            }
+          }
+        }
+
+        &.local-event{
+          .subtitle {
+            color: @orange;
+            font-style : italic;
+          }
+        }
+
+        &.park {
+          .size(338px, 100px);
+          .thumbnail {
+            .size(150px, 100px);
+            img{
+              width: 150px;
+            }
+          }
+          .info {
+            .size(160px, 92px);
+            .subtitle {
+              .orange;
+              font-style : italic;
+            }
+            .strapline {
+              height : 48px;
+            }
+          }
+        }
+
+      }
+
+      .before, .after {
+        border-style : solid;
+        content      : " ";
+        height       : 0;
+        position     : absolute;
+        width        : 0;
+      }
+      .before {
+        border-color : @orange transparent transparent;
+        border-width : 40px 15px 15px;
+        left         : 150px;
+      }
+      .after {
+        border-color : @white transparent transparent;
+        border-width : 32px 10px 10px;
+        left         : 155px;
+      }
+    }
+
+  }
+
+  .transport {
+    float     : right;
+    min-width : 144px;
+    width     : 20%;
+    height    : 100%
+  }
+}

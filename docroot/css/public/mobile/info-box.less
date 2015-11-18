@@ -1,0 +1,63 @@
+.info-box {
+  text-align:left ;
+
+  &.last {
+    margin-bottom : 0;
+  }
+
+  &.with-shadow{
+    padding: 0;
+    border-bottom: none;
+  }
+
+  > .inner-padding {
+    padding : 0;
+  }
+
+  a{
+    color: @grey-darker-1;
+  }
+
+  .header {
+    color: @orange;
+    padding-bottom : 12px;
+    font-weight: bold;
+  }
+
+  .info-row {
+    vertical-align : middle;
+  }
+
+  .narrow-info-row {
+    vertical-align : middle;
+  }
+
+  .info-row, .narrow-info-row {
+    padding : 6px 0;
+    &.first {
+      padding-top : 0;
+    }
+
+    &.last {
+      padding-bottom : 0;
+    }
+
+    .clearfix();
+  }
+
+
+  &.nearest-transport-widget{
+    .inner-padding{
+
+      .station-icon{
+        padding-right: 6px;
+      }
+
+      .station-info{
+        color: @grey-light-0;
+      }
+
+    }
+
+  }
+}

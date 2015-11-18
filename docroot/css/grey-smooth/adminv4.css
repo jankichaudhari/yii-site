@@ -1,0 +1,129 @@
+#page_header {
+    height     : 25px;
+    /*background: rgb(255, 234, 170);*/
+    background: #FFFCE6;
+    /*border-bottom: 1px solid #555;*/
+    background : url('/images/sys/admin/title_bg.gif') repeat;
+}
+
+#page_header table.header {
+    width : 100%;
+}
+
+#page_header .title {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 15px;
+    font-weight : bold;
+    padding     : 3px 5px 3px 3px;
+    color       : #666666;
+}
+#page_header .title a:link {
+	text-decoration: none;
+	color: #666666;
+}
+
+#page_header .versionInfo {
+    display: none;
+    font-size   : 10px;
+    font-weight : normal;
+}
+
+div.table-container, div.form {
+    margin-top : 5px;
+}
+
+div.table-container fieldset, div.form fieldset {
+    border           : 1px solid #ffCC00;
+    background-color : #FFFCE6;
+}
+
+legend {
+    background-color : white;
+    border           : 1px solid #ffCC00;
+    padding          : 2px 5px;
+    font-weight      : bold;
+    font-size        : 12.5px;
+    color            : #ff6600;
+}
+
+legend.title {
+    width:200px;
+}
+
+legend.actions {
+    line-height    : 16px;
+    height         : 16px;
+    padding        : 2px 5px;
+    float          : right;
+    margin-top     : -26px;
+    vertical-align : middle;
+    text-align     : center;
+}
+
+legend.actions span {
+    margin: 0 3px;
+}
+
+legend.actions.left {
+    float:left;
+    margin-left:215px;
+}
+legend.actions.right {
+    float:right;
+}
+
+/* new Fieldset style */
+fieldset.newFieldSet{
+	margin-top: 16px;
+}
+fieldset.newFieldSet legend{
+	margin-right: 15px;
+	margin-top: -16px;
+}
+fieldset.newFieldSet legend.autoTitle{
+	float: left;
+	width: auto;
+}
+fieldset.newFieldSet legend.actions{
+	margin-top: -14px;
+}
+fieldset.newFieldSet legend.actions.left{
+	margin-top: -14px;
+	margin-left:0px;
+}
+fieldset.newFieldSet legend.actions.bottom{
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+fieldset.newFieldSet legend.actions.left.bottom{
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+/* new Fieldset style */
+
+input[type=button], input[type=submit] {
+    font-weight: bold;
+    border:1px outset #555;
+    background: #dedede;
+}
+
+.ui-datepicker-trigger {
+    vertical-align: middle;
+}
+
+/*************************************************************
+ * styles for select screen i.e. User selection for appointments, property selection screen etc.
+ ************************************************************/
+ .selectScreen {
+     padding: 10px;
+ }
+ /*************************************************************
+ * styles for select screen i.e. User selection for appointments, property selection screen etc.
+ ************************************************************/
+
+table.list {
+
+}
+
+table.list tr:nth-child(even) {background: #CCC}
+table.list tr:nth-child(odd) {background: #FFF}

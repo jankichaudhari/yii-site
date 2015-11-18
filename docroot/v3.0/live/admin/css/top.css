@@ -1,0 +1,50 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+
+#top .title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding:3px 3px 3px 3px; /*trbl*/
+}
+#top .time {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding:3px 3px 3px 3px; /*trbl*/
+	color:#666666;
+}
+#top .quicklink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+}
+#top .head {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color:#999999;
+	padding:3px 3px 3px 3px; /*trbl*/
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ff999999',EndColorStr='#ff666666');
+}
+#top .head a:link {
+	color: #FFFFFF;
+	text-decoration:none;
+	}
+#top .head a:active {
+	color: #FFFFFF;
+	text-decoration:none;
+	}
+#top .head a:visited {
+	color: #FFFFFF;
+	text-decoration:none;
+	}
+#top .versionInfo {
+	font-size:10px;
+	font-weight:normal;
+	}

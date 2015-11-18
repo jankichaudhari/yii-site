@@ -1,0 +1,175 @@
+/* Style for docroot\protected\views\property\index.php */
+.property-listings {
+
+  .property-listing {
+    .search-property-widget {
+      padding : 77px 0;
+    }
+  }
+
+  .listings {
+    .detail-box {
+      height : 146px !important;
+
+      .thumbnail {
+        .square(146px);
+      }
+
+      .info {
+        width : 454px;
+
+        .strapline {
+          height : 68px;
+        }
+
+        .titles {
+          height      : 54px;
+          .subtitle {
+            .text-16;
+            .status {
+              color          : @red;
+              text-transform : uppercase;
+              &.available {
+                color : @orange;
+              }
+            }
+          }
+          &.park {
+            height : 48px;
+          }
+          line-height : 23px;
+        }
+      }
+    }
+  }
+
+  .sale-properties {
+    .additional-widgets {
+      padding-top : 49px;
+    }
+  }
+
+}
+
+/* Style for docroot\protected\views\property\detailsView.php */
+.property-details {
+  .detail-page-content {
+    .instruction-status {
+      .text-20;
+      color            : @white;
+      text-transform   : uppercase;
+      background-color : @transparent-orange-bg;
+    }
+    .instruction-price {
+      .text-20;
+      color            : @white;
+      background-color : @transparent-gray-bg;
+    }
+    .instruction-rooms {
+      .text-16;
+      font-style       : italic;
+      background-color : @transparent-light-gray-bg;
+    }
+    .instruction-qualifier {
+      .text-20;
+      color            : @white;
+      background-color : @transparent-gray-bg;
+    }
+    .instruction-tenure {
+      .text-16;
+      font-style       : italic;
+      background-color : @transparent-light-gray-bg;
+    }
+
+    .orange-big-separator {
+      margin-bottom : 8px
+    }
+
+    .info-container {
+
+      .disclaimer {
+        .text-shadow(none);
+        font-size   : 10px;
+        line-height : 14px;
+        margin-bottom: 24px;
+      }
+      .instruction-area {
+        font-weight : bold;
+        margin-bottom: 24px;
+      }
+
+      .floorplans {
+        .floorplan {
+          margin-bottom: 12px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          img {
+            max-width : 648px;
+          }
+        }
+      }
+
+    }
+
+    .instruction-video {
+      background-position : center center;
+      height              : 212px;
+      margin-bottom       : 24px;
+
+      .video-title {
+        .text-18;
+        font-weight      : bold;
+        color            : @white;
+        background-color : @orange;
+        padding          : 8px 24px;
+        line-height      : 20px
+      }
+
+      .video-info {
+        text-align  : center;
+        padding-top : 48px
+      }
+    }
+
+    .book-viewing-widget {
+      .website-block-style(true, true);
+    }
+
+    .property-features {
+      .website-block-style(true, true);
+      .narrow-info-row {
+        .text-14;
+        font-weight : bold;
+      }
+    }
+
+  }
+}
+
+.send-to-friend {
+  .website-block-style(true, false);
+  width : 648px;
+  .information {
+    .text-16;
+    .property-address {
+      color       : @orange;
+      font-weight : bold;
+    }
+    .property-link {
+      color       : @blue;
+      font-weight : bold;
+    }
+  }
+  .error-message {
+    color       : @red;
+    font-weight : bold;
+  }
+  .sent-message {
+    .text-16;
+    color       : @orange;
+    font-weight : bold;
+    margin-top  : 40%;
+    text-align  : center;
+  }
+}

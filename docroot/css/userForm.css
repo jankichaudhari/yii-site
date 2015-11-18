@@ -1,0 +1,53 @@
+.form input{
+	width: 200px;
+}
+.form select{
+	width: 204px;
+}
+.form input[type=radio]{
+	width: 20px;
+}
+
+.form input[type=checkbox]{
+	width: auto;
+}
+.form fieldset#userSystemInfo, .form fieldset#userPersonalInfo{
+	border: 1px solid #999999;
+	width: 1000px;
+}
+.form fieldset#userSystemInfo legend,.form fieldset#userPersonalInfo legend{
+	border: 1px solid #999999;
+	color: #666666;
+}
+.form #userInfo, .form #userPerInfo{
+	float: left;
+	width:400px;
+	margin-top: 10px;
+}
+.form fieldset#userRoles, .form fieldset#userAddress{
+	float:right;
+	width:400px;
+	border: 1px solid #CCCCCC;
+}
+.form fieldset#userRoles legend, .form fieldset#userAddress legend{
+	color: #999999;
+	border: 1px solid #CCCCCC;
+}
+.form fieldset#userAddress label{
+	float:none;
+}
+.form input[type=submit]{
+	width: auto;
+	background-color:#FF6600;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.form h1{
+	color: #FF6600;
+}
+.form .buttons{
+	width:890px;
+}
+.clear{
+	clear: both;
+}

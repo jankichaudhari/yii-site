@@ -1,0 +1,56 @@
+.property-details {
+
+  .detail-page-content {
+
+    .view-button {
+      .displayFloat();
+      .box-sizing();
+      width   : 50%;
+      padding-top : 12px;
+      &.left {
+        padding-right : 6px;
+      }
+      &.right {
+        padding-left : 6px;
+      }
+      .btn {
+        background-color : @orange;
+        border           : 1px solid @orange;
+      }
+    }
+
+    .instruction-area{
+      color: @grey-darker-1;
+    }
+
+    .property-features {
+      text-transform : capitalize;
+    }
+
+    .book-viewing-widget {
+      .inner-padding {
+        .branch-name, .branch-telephone, .property-under-offer {
+          .hide();
+        }
+      }
+    }
+
+  }
+}
+
+.disclaimer, .instruction-area, .floorplans{
+  .separate-block();
+  padding: 12px;
+}
+
+.floorplans{
+  img{
+    max-width: 100%;
+  }
+}
+
+.send-to-friend{
+  .form-header{
+    color: @orange;
+  }
+}

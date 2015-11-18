@@ -1,0 +1,220 @@
+<?php
+session_start();
+require("../global.php"); 
+require("../secure.php"); 
+$pageTitle = "Stamp Duty Exemption";
+echo html_header($pageTitle);
+?>
+<h2><?php echo $pageTitle;?></h2>
+<p>Wards that qualify for stamp duty exemption (not complete)</p>
+<p>For a full list click here: <a href="http://www.inlandrevenue.gov.uk/so/disadvantaged.htm" target="_blank">http://www.inlandrevenue.gov.uk/so/disadvantaged.htm</a></p>
+<TABLE cellSpacing=0 cellPadding=5 border=1>
+  <TBODY>
+  <TR>
+    <TD><STRONG>Ward</STRONG></TD>
+    <TD><STRONG>Local Authority</STRONG></TD>
+    <TD><STRONG>Stamp Duty Exempt</STRONG></TD></TR>
+  <TR>
+    <TD>Abbey</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Alleyn</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Barset</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Bellenden</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Bricklayers</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Browning</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Brunswick</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Burgess</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Cathedral</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Chaucer</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Consort</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Dockyard</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Faraday</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Friary</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Liddle</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Lyndhurst</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Newington</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Riverside</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Rotherhithe</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Ruskin</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Rye</TD>
+    <TD>Southwark</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>St Giles</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>The Lane</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Waverley</TD>
+    <TD>Southwark</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Angell</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Bishop's</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Clapham Park</TD>
+    <TD>Lambeth</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Clapham Town</TD>
+    <TD>Lambeth</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Ferndale</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Herne Hill</TD>
+    <TD>Lambeth</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Larkhall</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Oval</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Prince's</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Stockwell</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Town Hall</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Tulse Hill</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Vassall</TD>
+    <TD>Lambeth</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Blackheath</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Crofton Park</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Drake</TD>
+    <TD>Lewisham</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Evelyn</TD>
+    <TD>Lewisham</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Grinling Gibbons</TD>
+    <TD>Lewisham</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Hither Green</TD>
+    <TD>Lewisham</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Ladywell</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Manor Lee</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Marlowe</TD>
+    <TD>Lewisham</TD>
+    <TD><B>Yes</B></TD></TR>
+  <TR>
+    <TD>Pepys</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>St Margaret</TD>
+    <TD>Lewisham</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>St Alfege</TD>
+    <TD>Greenwich</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>Trafalgar</TD>
+    <TD>Greenwich</TD>
+    <TD>No</TD></TR>
+  <TR>
+    <TD>West</TD>
+    <TD>Greenwich</TD>
+    <TD>No</TD></TR></TBODY></TABLE></BODY></HTML>

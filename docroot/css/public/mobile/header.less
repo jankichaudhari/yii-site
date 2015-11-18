@@ -1,0 +1,28 @@
+.page-header-top{
+  height: 50px;
+  .mediaScreens(13,'height',50,2.5,px);
+  padding : 4% 2% 3% 2%;
+  background    : @grey-dark;
+  border-bottom : @orange-dark 4px solid;
+  #header {
+    width:46%;
+    .displayFloat();
+    .logo {
+      float       : left;
+      a{
+        display: block;
+        line-height: 0;
+        img {
+          min-width: 49px;
+          width: 46%;
+          height : auto;
+        }
+      }
+    }
+    .info {
+      float        : right;
+      .hide();
+    }
+    .clearfix();
+  }
+}

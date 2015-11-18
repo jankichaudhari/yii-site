@@ -1,0 +1,188 @@
+/* common html used on multiple pages */
+.big-separator() {
+  width         : 100%;
+  border-bottom : 2px dotted @white;
+  margin        : 24px 0;
+  position      : relative;
+  &:before {
+    position           : absolute;
+    display            : block;
+    content            : '';
+    border-bottom      : 2px dotted @grey-dark;
+    margin-top         : -1px;
+    margin-left        : -1px;
+    height             : 100%;
+    width              : 100%;
+    box-sizing         : border-box;
+    -moz-box-sizing    : border-box;
+    -webkit-box-sizing : border-box;
+  }
+}
+
+.orange-big-separator {
+  .big-separator();
+  &:before {
+    border-bottom : 2px dotted @orange;
+  }
+}
+
+.gray-big-separator {
+  .big-separator();
+}
+
+.orange-big-heading {
+  font-size      : 64px;
+  line-height    : 64px;
+  font-family    : @blissFamily;
+  font-weight    : bold;
+  font-style     : italic;
+  letter-spacing : -1px;
+  color          : @orange;
+  text-transform: uppercase;
+  .text-shadow(1px 1px @white);
+}
+
+.grey-heading-text {
+  color       : @grey-dark;
+  font-size   : 16px;
+  line-height : 24px;
+  .text-shadow(1px 1px @white);
+}
+
+.play-video img {
+  vertical-align : middle;
+  &:hover {
+    opacity : .9;
+    filter  : alpha(opacity=90);
+  }
+}
+
+.message {
+  line-height   : 18px;
+  margin-bottom : 24px;
+  font-weight: bold;
+
+  &.success{
+    color: @green;
+  }
+  &.error{
+    color: @red;
+  }
+
+  ul {
+    padding : 0;
+    margin  : 0;
+  }
+
+  li {
+    margin-left : 24px;
+  }
+
+  .horizontal li {
+    float      : left;
+    list-style : none;
+  }
+
+}
+
+.row-fluid .message {
+  margin-bottom : 0;
+}
+
+.back-to-top {
+  width    : 1008px;
+  margin   : 0 auto;
+  position : relative;
+  cursor   : pointer;
+  overflow : hidden;
+  display  : none;
+
+  .fixed-wrapper {
+    width    : 50px;
+    height   : 50px;
+    position : absolute;
+    top      : 0;
+    left     : -100px; /* Move this out to the left of the site body, leaving a 20px gutter */
+  }
+
+  .fixed {
+    position : fixed;
+    bottom   : 50%;
+  }
+}
+
+@media all and (max-width : 1200px) {
+  .fixed-wrapper {
+    left : -40px
+  }
+}
+
+.cookies-disclaimer {
+  color       : @white;
+  line-height : 40px;
+  font-size   : 12px;
+  text-align  : center;
+  width       : 100%;
+  background  : rgba(51, 51, 51, 0.91);
+  height      : 40px;
+  z-index     : 10000;
+  position    : fixed;
+  bottom      : 0
+}
+
+/* common html used on multiple pages */
+
+.clearfix {
+  .clearfix();
+}
+
+.center-block {
+  .center-block();
+}
+
+.pull-right {
+  float : right !important;
+}
+
+.pull-left {
+  float : left !important;
+}
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display : none !important;
+}
+
+.show {
+  display : block !important;
+}
+
+.invisible {
+  visibility : hidden;
+}
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display    : none !important;
+  visibility : hidden !important;
+}
+
+///////////////////////////////////////////
+.website-block-style(@top-line:false,@shadow:false){
+  background-color: @white;
+  color: @grey;
+  .top-line() when (@top-line = true) {
+    border-top: 4px solid @orange;
+  }
+  .top-line();
+  .shadow() when (@shadow = true) {
+    .with-shadow;
+  }
+  .shadow();
+}

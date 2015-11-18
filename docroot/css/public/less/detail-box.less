@@ -1,0 +1,96 @@
+/* Style for docroot\protected\views\property\index.php */
+.detail-box {
+  background-color : @white;
+  width            : 100%;
+  display          : block;
+  margin-bottom    : 24px;
+  color            : @grey;
+  font-size        : 14px;
+  font-weight      : normal;
+  position         : relative;
+
+  .thumbnail {
+    overflow : hidden;
+    .displayFloat();
+  }
+
+  .clearfix();
+
+  .info {
+
+    padding : 8px 12px 4px 12px;
+    .displayFloat();
+
+    a {
+      text-decoration : none;
+      color           : @grey;
+    }
+
+    h3 {
+      font-size      : 18px;
+      color          : @grey;
+      margin         : 4px 0px;
+      text-transform : capitalize;
+      &.title {
+        .text-18;
+        font-weight: bold;
+      }
+
+      a {
+        font-size : 18px;
+        &:hover {
+          color : @orange;
+        }
+      }
+    }
+
+    .subtitle {
+      font-weight: bold;
+    }
+
+    .block-link {
+      .text-11;
+      font-weight     : bold;
+    }
+
+    .block {
+      margin     : 4px 0px;
+      position   : relative;
+      overflow   : hidden;
+      min-height : 30px;
+
+      .inner-block {
+        position : absolute;
+        top      : 0;
+        left     : 0;
+        h3 {
+          margin : 0;
+        }
+      }
+
+      &.strapline {
+        .text-14;
+        line-height : 20px;
+        overflow    : hidden;
+        position    : relative;
+        .inner-block {
+          bottom : 0;
+          top    : auto;
+        }
+      }
+    }
+
+  }
+}
+
+.vertical-separator {
+  background-color : @grey-light;
+  display          : inline-block;
+  height           : 12px;
+  width            : 1px;
+}
+
+.horizontal-dotted-separator {
+  border-bottom : 1px dotted @grey-light;
+  margin        : 8px 0px;
+}

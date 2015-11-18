@@ -1,0 +1,92 @@
+#header {
+  min-width     : @header-min-width;
+  height        : 64px;
+  padding       : 22px 0 18px 0;
+  background    : @grey-dark;
+  border-bottom : @orange-dark 4px solid;
+  position      : relative;
+  .box-shadow(2px 1px 3px rgba(136, 136, 136, 0.72));
+  .logo {
+    float       : left;
+    margin-left : 84px;
+    img {
+      width  : 169px;
+      height : 64px;
+    }
+  }
+  .info {
+    float        : right;
+    margin-right : 74px;
+    margin-top   : 44px;
+    .icon-block {
+      color        : @white;
+      float        : left;
+      margin-right : 12px;
+      margin-top   : -4px;
+    }
+    .icon {
+      width                 : 24px;
+      height                : 24px;
+      display               : block;
+      float                 : left;
+      background-color      : transparent;
+      background-image      : url(@header-icons-url);
+      background-repeat     : no-repeat;
+      background-attachment : scroll;
+      &.facebook {
+        background-position : -24px -74px;
+      }
+      &.facebook:hover {
+        background-position : -24px -24px;
+      }
+      &.twitter {
+        background-position : -74px -74px;
+      }
+      &.twitter:hover {
+        background-position : -74px -24px;
+      }
+      &.vimeo {
+        background-position : -124px -74px;
+      }
+      &.vimeo:hover {
+        background-position : -124px -24px;
+      }
+    }
+
+    &:after {
+      clear   : both;
+      display : block;
+      content : '';
+    }
+
+    .block {
+      font-family  : @blissFamily;
+      color        : @white;
+      font-size    : 18px;
+      line-height  : 18px;
+      margin       : 0;
+      padding      : 0;
+      float        : left;
+      margin-right : 20px;
+    }
+
+    span.separator {
+      display    : inline-block;
+      height     : 11px;
+      width      : 2px;
+      margin     : 0 4px;
+      background : @white;
+    }
+  }
+
+  @media all and (max-width : 1250px) {
+    .logo {
+      margin-left : 0;
+    }
+
+    .info {
+      margin-right : 0;
+    }
+  }
+
+}

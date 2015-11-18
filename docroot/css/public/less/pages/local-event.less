@@ -1,0 +1,71 @@
+/* Style for docroot\protected\views\localEvent\index.php */
+.localevent-listings{
+
+  .local-event{
+    .detail-box {
+      height : 200px !important;
+      .thumbnail {
+        .square(200px);
+        img{
+          .square(200px);
+        }
+      }
+
+      .info {
+        width : 424px;
+        .strapline {
+          height : 64px;
+        }
+
+        .titles {
+          height      : 78px;
+          line-height : 23px;
+
+          .subtitle{
+            .text-18;
+            .event-date,.event-time{
+              font-weight: normal;
+            }
+            .event-time{
+              text-transform: italic;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .additional-widgets{
+    padding-top: 49px;
+  }
+
+}
+
+/* Style for docroot\protected\views\localEvent\detailsView.php */
+.localevent-details{
+  .localevent-date{
+    .text-16;
+    background-color: @transparent-light-gray-bg;
+  }
+  .localevent-time{
+    .text-14;
+    font-style: italic;
+  }
+  .localevent-location{
+    .text-16;
+    color: @white;
+    background-color: @transparent-orange-bg;
+    text-transform: capitalize;
+  }
+  .localevent-options{
+    .website-block-style(true,true);
+    .info-row{
+      .text-14;
+      font-weight: bold;
+    }
+  }
+  .localevent-transport{
+    .website-block-style(true,true);
+  }
+}

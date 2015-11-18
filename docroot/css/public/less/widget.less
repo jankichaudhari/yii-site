@@ -1,0 +1,133 @@
+/* top transparent widget */
+.top-widget-container {
+  background : @white;
+  filter     : alpha(opacity=80);
+  background : rgba(255, 255, 255, 0.80);
+  color      : @grey;
+
+  .inner-padding {
+    padding : 12px 24px;
+  }
+
+  .full-width-input-wrapper {
+    padding : 0 10px 4px 0;
+  }
+
+  .input-wrapper {
+    margin : 0 4px 0 0;
+  }
+
+  .form-header {
+    text-transform: uppercase;
+    font-size     : 18px;
+    font-weight   : bold;
+    margin-bottom : 8px;
+    &.no-margin{
+      margin-bottom: 0;
+    }
+  }
+
+  .block-label {
+    font-weight   : bold;
+    margin-bottom : 8px;
+    display       : block;
+    font-size     : 14px;
+    height        : 13px;
+    &.hide{
+      .hide();
+    }
+  }
+
+  .info-row {
+    margin : 8px 0;
+    &.first {
+      margin : 0 0 8px 0;
+    }
+    &.last {
+      margin : 8px 0 0 0;
+    }
+  }
+
+  .narrow-info-row {
+    margin : 4px 0;
+    &.first {
+      margin : 0 0 4px 0;
+    }
+    &.last {
+      margin : 4px 0 0 0;
+    }
+  }
+
+  .row-fluid {
+    margin-bottom : 12px;
+    &.no-margin{
+      margin-bottom: 0;
+    }
+  }
+
+  .row {
+    margin-left   : -24px;
+    margin-bottom : 12px;
+
+    .cell,.half-cell,.small-cell{
+      float       : left;
+      margin-left : 24px;
+      &.right {
+        text-align : right;
+      }
+    }
+  }
+
+  &.wide{
+    .row {
+      width : 624px;
+      .cell {
+        width : 600px;
+      }
+      .half-cell {
+        width : 288px;
+        &.right {
+          margin-left : 192px;
+        }
+      }
+      .small-cell {
+        width : 132px;
+      }
+    }
+  }
+
+  &.narrow {
+    .row {
+      width : 312px;
+      .cell {
+        width : 264px;
+      }
+      .half-cell {
+        width : 120px;
+      }
+      .cell2 {
+        margin-left : 24px;
+      }
+    }
+  }
+
+
+
+  &.book-viewing-widget{
+    .branch-name,.branch-telephone{
+      .text-16;
+      font-weight: bold;
+    }
+    .branch-telephone{
+      color: @orange;
+    }
+    .property-under-offer{
+      color: @red;
+    }
+    .property-not-available{
+      color: @orange;
+    }
+  }
+
+}
+/* top transparent widget */

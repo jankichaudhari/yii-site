@@ -1,0 +1,292 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial, Helvetica, sans-serif";
+  font-size: 12pt;
+  line-height: 14pt;
+}
+.pdfWrapper {
+  width: 178mm;
+  margin: 0 auto;
+}
+div.front-page-header {
+  background: #f09000;
+  height: 70pt;
+  position: relative;
+}
+.office-info {
+  text-align: right;
+  color: #f09000;
+}
+span.sep-dot {
+  color: #fcc488;
+}
+span.sep-pipe {
+  height: 7.90pt;
+  display: inline-block;
+  width: .7mm;
+  background: #fcc488;
+}
+.bold {
+  font-family: 'Arial, Helvetica, sans-serif bold';
+}
+.italic {
+  font-style: italic;
+}
+.light {
+  font-family: 'Arial, Helvetica, sans-serif ExtraLight';
+}
+.light-bold {
+  font-family: 'Arial, Helvetica, sans-serif ExtraLight';
+  font-weight: bold;
+}
+.ten {
+  font-size: 10pt;
+}
+.thirteen {
+  font-size: 13pt;
+}
+.fourteen {
+  font-size: 14pt;
+}
+.seventeen {
+  font-size: 17pt;
+  line-height: 21pt;
+}
+.eighteen {
+  font-size: 18pt;
+}
+.twentytwo {
+  font-size: 22pt;
+  line-height: 28pt;
+}
+.white {
+  color: white;
+}
+.headerUrl {
+  position: absolute;
+  margin-top: 16.394mm;
+  right: 2.824mm;
+  font-size: 18pt;
+  line-height: 21pt;
+  height: 21pt;
+}
+.vertical-orange-line {
+  height: 4pt;
+  margin-bottom: 11pt;
+  border-bottom: 3pt solid #f09000;
+}
+.property-details {
+  height: 103mm;
+}
+.property-details .right {
+  float: left;
+  width: 66.4mm;
+}
+.property-details .right .box {
+  margin: 0;
+  padding-right: 6.501mm;
+  background: #6d6e70;
+  margin-bottom: 0.806mm;
+  margin-bottom: 1.8pt;
+  text-align: right;
+  font-size: 13pt;
+  color: white;
+  line-height: 14pt;
+}
+.property-details .right .box.leftText {
+  text-align: left;
+  padding-left: 1.8mm;
+}
+.property-details .right .box.small-vertical-padding {
+  padding-top: 2pt;
+  padding-bottom: 2pt;
+}
+.property-details .right .box.medium-vertical-padding {
+  padding-top: 4pt;
+  padding-bottom: 4pt;
+}
+.MAIN-IMAGE {
+  float: left;
+  margin-right: 8mm;
+  width: 103.6mm;
+  height: 103mm;
+  background: #dedede;
+}
+.MAIN-IMAGE > img {
+  width: 103.6mm;
+  height: 103mm;
+}
+.MAIN-IMAGE-THUMBS {
+  float: left;
+  margin-right: 8mm;
+  width: 103.6mm;
+  height: 103mm;
+  background: white;
+  margin-left: -2mm;
+}
+.MAIN-IMAGE-THUMBS > img {
+  display: block;
+  float: left;
+  width: 32.5mm;
+  height: 33.3mm;
+  margin-left: 2mm;
+  margin-bottom: 2mm;
+}
+.property-details
+
+.property-rooms-details {
+  width: 100%;
+  text-align: right;
+  border: 0;
+  border-collapse: collapse;
+}
+.property-rooms-details td {
+  height: 32.8pt;
+  border: 0px;
+}
+.property-rooms-details td.image {
+  width: 35pt;
+}
+.property-rooms-details td.image > img {
+  width: 35pt;
+}
+.main-page-logo {
+  padding-top: 9.3pt;
+  padding-left: 3.5pt;
+  width: 105.6pt;
+  height: 51.7pt;
+  float: left;
+}
+.main-page-logo > img {
+  width: 105.6pt;
+  height: 51.7pt;
+}
+.property-details .plus {
+  padding: 0 5pt;
+}
+.property-description-header {
+  border-bottom: 2pt solid black;
+  padding-bottom: 2pt;
+  padding-top: 6pt;
+}
+.property-description {
+  page-break-after: always;
+  border-bottom: 0.3mm solid #f09000;
+}
+.property-description p {
+  font-size: 10pt;
+  line-height: 14pt;
+  margin: 7pt 0;
+  color: #707173;
+  orphans: 2;
+  widows: 2;
+}
+.property-description .strapline {
+  font-size: 15pt;
+  margin: 14pt 0 7pt;
+  color: #000000;
+}
+.property-images {
+  overflow: auto;
+  text-align: center;
+  font-size: 0;
+  line-height: 1;
+}
+.property-images img {
+  width: 74mm;
+  height: 74mm;
+  display: inline-block;
+  margin-right: 3mm;
+  margin-top: 3mm;
+  page-break-inside: avoid;
+}
+.property-images .row:before {
+  display: table;
+  content: '';
+}
+.property-images .row:after {
+  display: table;
+  content: '';
+}
+.section {
+  page-break-after: always;
+}
+.section-header {
+  font-style: italic;
+  line-height: 12pt;
+  font-size: 14pt;
+  color: #707173;
+  border-bottom: 0.7mm solid #f09000;
+  letter-spacing: 1pt;
+  margin-bottom: 14pt;
+  padding-bottom: 4pt;
+}
+.section-header .normal {
+  font-size: 12pt;
+  letter-spacing: normal;
+  font-style: normal;
+  margin-left: 20pt;
+}
+.section.epc img {
+  max-height: 220mm;
+  max-width: 178mm;
+}
+.section .floorplan-img >img {
+  max-height: 220mm;
+  max-width: 178mm;
+}
+.no-page-break-after {
+  page-break-after: avoid;
+}
+#header {
+  height: 24.7mm;
+}
+#header .block {
+  background: #f09000;
+}
+div#front-page-header {
+  background: #f09000;
+  height: 24.7mm;
+  position: relative;
+  display: none;
+}
+.main-page-logo {
+  padding-top: 9.3pt;
+  padding-left: 3.5pt;
+  width: 105.6pt;
+  height: 51.7pt;
+  float: left;
+}
+.main-page-logo > img {
+  width: 105.6pt;
+  height: 51.7pt;
+}
+.headerUrl {
+  position: absolute;
+  margin-top: 16.394mm;
+  right: 2.824mm;
+  font-size: 18pt;
+  line-height: 21pt;
+  height: 21pt;
+  font-family: 'Arial, Helvetica, sans-serif Bold';
+  color: white;
+}
+#footer {
+  font-family: 'Arial, Helvetica, sans-serif Bold';
+  border-bottom: 1pt solid #f4911e;
+  font-size: 10pt;
+  line-height: 14pt;
+  margin-top: 20pt;
+}
+span.sep-pipe {
+  height: 7.90pt;
+  display: inline-block;
+  width: .7mm;
+  background: #fcc488;
+  margin: 0 7pt;
+}
+#footer .footer-bold {
+  font-family: 'Arial, Helvetica, sans-serif Bold';
+}

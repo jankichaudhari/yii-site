@@ -1,0 +1,70 @@
+
+.career {
+  .apply-now-widget {
+    padding : 46px 0;
+  }
+}
+
+.careers {
+
+  .full-details {
+    margin-bottom : 24px;
+    &:after {
+      content : '';
+      display : block;
+      clear   : both;
+    }
+
+    .wrap-description {
+      background : #f6f6f6;
+      overflow   : hidden;
+      right      : 0;
+
+      .inner-description {
+        background   : @white;
+        right        : 212px;
+        border-right : 4px solid @orange;
+        float        : left;
+        width        : 100%;
+        position     : relative;
+
+        .info-block {
+          padding  : 16px;
+          position : relative;
+          overflow : hidden;
+          left     : 212px;
+
+          &.description {
+            float : left;
+            width : 400px;
+          }
+
+          &.skills {
+            float : right;
+            width : 180px;
+          }
+
+          .header {
+            font-size   : 18px;
+            line-height : 18px;
+            font-weight : bold;
+          }
+
+          .details {
+            font-size   : 13px;
+            line-height : 24px;
+          }
+
+          ul {
+            list-style   : none;
+            padding-left : 0;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}

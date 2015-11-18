@@ -1,0 +1,104 @@
+.park-listings {
+
+  .search-park-widget {
+    padding-top : 28px;
+    .description {
+      line-height   : 17px;
+      border-bottom : 1px dotted #888888;
+    }
+  }
+
+  .park-view-option {
+    position : relative;
+
+    & .park-icon {
+      position : absolute;
+      top      : 6px;
+      left     : 36px;
+    }
+    & a {
+      color           : @grey-dark;
+      text-decoration : none;
+      font-size       : 14px;
+      font-weight     : bold;
+    }
+  }
+
+  .park {
+
+    .before, .after {
+      top : 100px;
+    }
+
+    .gallery-view {
+      .detail-box {
+        height : 322px !important;
+
+        .thumbnail {
+          .size(312px, 209px);
+          text-align : center;
+          img {
+            border : 1px solid #e2e0e1;
+          }
+        }
+
+        .info {
+          width : 288px;
+
+          .subtitle {
+            .orange;
+            .text-16;
+            font-weight: bold;
+          }
+
+          .strapline {
+            height : 41px;
+          }
+        }
+
+        .secretSpace {
+          margin-left : 220px;
+          margin-top  : -194px;
+        }
+
+      }
+    }
+
+    .list-view {
+      .detail-box {
+        height : 207px !important;
+
+        .thumbnail {
+          .size(310px, 207px);
+        }
+
+        .info {
+          width : 310px;
+
+          .strapline {
+            height : 116px;
+          }
+
+          .titles {
+            height      : 66px;
+            line-height : 23px;
+
+            .subtitle {
+              .text-18;
+              .orange;
+              font-weight     : bold;
+            }
+          }
+
+        }
+
+        .secretSpace {
+          position : absolute;
+          top      : 10px;
+          right    : 10px;
+        }
+
+      }
+    }
+  }
+}

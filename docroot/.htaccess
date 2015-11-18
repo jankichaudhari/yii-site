@@ -1,0 +1,21 @@
+RewriteEngine on
+# if a directory or a file exists, use it directly
+<FilesMatch "TEMPLATE.php$">
+    Deny from all
+</FilesMatch>
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+RewriteRule ^(.*)~$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+#allowed maximum file upload size
+php_value memory_limit 120M
+php_value max_execution_time 120
+php_value upload_max_filesize 20M
+php_value post_max_size 200M
+php_value max_input_time 500

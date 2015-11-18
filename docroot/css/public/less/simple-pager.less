@@ -1,0 +1,33 @@
+.simple-pager {
+  list-style    : none;
+  margin-bottom : 24px;
+  padding       : 0;
+  font-size     : 13px;
+  font-weight   : bold;
+
+  overflow      : hidden;
+  zoom          : 1;
+
+  .page {
+    display : none;
+  }
+
+  .previous {
+    float : left;
+  }
+
+  .next {
+    float : right;
+  }
+
+  &.inversed {
+
+    .previous {
+      float : right;
+    }
+
+    .next {
+      float : left;
+    }
+  }
+}

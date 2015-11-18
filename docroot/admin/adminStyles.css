@@ -1,0 +1,301 @@
+a:link 		{  color: #00007F}
+
+a:active 	{  color: #CC0000}
+
+a:visited	{  color: #00007F}
+
+a:hover		{  color: #CC0000}
+
+
+
+.capz 		{  text-transform: capitalize}
+
+.allcapz 	{  text-transform: uppercase}
+
+
+
+body, td, p	{ font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;}
+
+
+
+input, textarea		{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt;}
+
+
+
+.changes {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	color: #FF0000;
+
+	text-align:center;
+
+}
+
+
+
+.footerTitle { font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight: bold; font-size: 17px}
+
+.footerUrl { font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight: normal; font-size: 12px}
+
+.footerBranch { font-family: Arial, Helvetica, sans-serif; color: #333333; font-weight: normal; font-size: 12px}
+
+.footerAddr	{ font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 11px}
+
+.footerFine	{ font-family: Arial, Helvetica, sans-serif; color: #999999; font-size: 10px; text-align: justify;}
+
+
+
+.pageTitle {  font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold}
+
+
+
+td.head {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #333333}
+
+td.head a:link		{  color: #FFFFFF; text-decoration: none}
+
+td.head a:active	{  color: #FFFFFF; text-decoration: none}
+
+td.head a:visited	{  color: #FFFFFF; text-decoration: none}
+
+td.head a:hover		{  color: #FFFF00; text-decoration: none}
+
+
+
+td.body {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+.marketState {  font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FFFFCC}
+
+td.archived { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+
+
+.forSale {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+
+
+.underOffer { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666}
+
+
+
+.greyForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; background-color: #E9E9E9}
+
+.greyForm a:link 	{  color: #00007F}
+
+.greyForm a:active 	{  color: #CC0000}
+
+.greyForm a:visited	{  color: #00007F}
+
+.greyForm a:hover	{  color: #CC0000}
+
+
+
+.whiteForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; background-color: #FFFFFF}
+
+.whiteForm a:link 	{  color: #00007F}
+
+.whiteForm a:active 	{  color: #CC0000}
+
+.whiteForm a:visited	{  color: #00007F}
+
+.whiteForm a:hover	{  color: #CC0000}
+
+
+
+.anchorNav { 
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+
+	font-size: 11px;
+
+	font-weight: bold;
+
+	color: #CCCCCC;
+
+	}
+
+.anchorNav a:link 	{  color: #666666; text-decoration:none}
+
+.anchorNav a:active 	{  color: #666666; text-decoration:none}
+
+.anchorNav a:visited	{  color: #666666; text-decoration:none}
+
+.anchorNav a:hover	{  color: #333333; text-decoration:none}
+
+
+
+.redForm {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 11px;
+
+	background-color:#FF5151; /* #FD7364 */
+
+	font-weight: bold;
+
+	color: #FFFFFF;
+
+}
+
+.redForm a:link 		{  color: #00007F}
+
+.redForm a:active 	{  color: #CC0000}
+
+.redForm a:visited	{  color: #CC0000}
+
+.redForm a:hover		{  color: #CC0000}
+
+
+
+td.greyFormSmall { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; background-color: #E9E9E9}
+
+
+
+th.greyForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #666666}
+th.greyForm a:link 		{  color: #FFFFFF}
+th.greyForm a:active 	{  color: #FFFFFF}
+th.greyForm a:visited	{  color: #FFFFFF}
+th.greyForm a:hover		{  color: #FF0000}
+
+th.salesForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #990000}
+th.salesForm a:link 		{  color: #FFFFFF}
+th.salesForm a:active 	{  color: #FFFFFF}
+th.salesForm a:visited	{  color: #FFFFFF}
+th.salesForm a:hover		{  color: #FF0000}
+
+th.lettingsForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #000099}
+th.lettingsForm a:link 		{  color: #FFFFFF}
+th.lettingsForm a:active 	{  color: #FFFFFF}
+th.lettingsForm a:visited	{  color: #FFFFFF}
+th.lettingsForm a:hover		{  color: #FF0000}
+
+.inputSmall {  font-weight: bold; color: #FFFFFF; background-color: #FF6600; border-style: solid; border-top-width: thin; border-right-width: thin; border-bottom-width: thin; border-left-width: thin; font-size: 9px}
+
+
+
+.important {  font-size: 9.5px; color: #FF0000}
+
+
+
+.th1 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFDD; background-color: #666666}
+
+.th1 a:link 	{  color: #FFFFFF; text-decoration: none}
+
+.th1 a:active 	{  color: #FFFFFF; text-decoration: none}
+
+.th1 a:visited 	{  color: #FFFFFF; text-decoration: none}
+
+.th1 a:hover	{  color: #FFFFFF; text-decoration: underline}
+
+
+
+.td1 {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #000000; background-color: #E3E3E3}
+
+.td1 a:link 	{  color: #000000; text-decoration: none}
+
+.td1 a:active 	{  color: #000000; text-decoration: none}
+
+.td1 a:visited 	{  color: #000000; text-decoration: none}
+
+.td1 a:hover	{  color: #990000; text-decoration: underline}
+
+
+
+.td2 {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #000000; background-color: #FFFFFF}
+
+.td2 a:link 	{  color: #000000; text-decoration: none}
+
+.td2 a:active 	{  color: #000000; text-decoration: none}
+
+.td2 a:visited 	{  color: #000000; text-decoration: none}
+
+.td2 a:hover	{  color: #990000; text-decoration: underline}
+
+
+
+.selState2	{  background-color: #E3E3E3}
+
+
+
+.inputWide	{ width: 250px }
+
+.ThumbTitle {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 13.5px;
+
+	font-weight: bold;
+
+}
+
+.greyText {
+
+	color: #666666;
+
+
+
+}
+
+.Pending { color: #FF0000; }
+
+.Pending a:link 	{  color: #FF0000;}
+
+.Pending a:active 	{  color: #FF0000;}
+
+.Pending a:visited 	{  color: #FF0000;}
+
+.Pending a:hover	{  color: #FF0000;}
+
+
+
+.Arranged { color: #000000; }
+
+.Arranged a:link 	{  color: #000000; }
+
+.Arranged a:active 	{  color: #000000; }
+
+.Arranged a:visited 	{  color: #000000; }
+
+.Arranged a:hover	{  color: #000000; }
+
+
+
+.Cancelled { color: #999999; }
+
+.Cancelled a:link 	{  color: #999999; }
+
+.Cancelled a:active 	{  color: #999999; }
+
+.Cancelled a:visited 	{  color: #999999; }
+
+.Cancelled a:hover	{  color: #999999; }
+
+
+
+th.blueForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #000066}
+
+th.redForm { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFFFF; background-color: #990000}
+
+
+.flagNone {
+	color:#999999;
+	font-weight:bold;
+	}
+.flagFollow-up {
+	color:#FF0000;
+	font-weight:bold;
+	}
+.flagComplete {
+	color:#000000;
+	font-weight:bold;
+	}
+
+.tinytext {
+	font-size:9px;
+	}

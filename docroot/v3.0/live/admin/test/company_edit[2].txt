@@ -1,0 +1,152 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3c.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Company</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/scriptaculous/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous/scriptaculous.js"></script>
+<script type="text/javascript">
+// <!--
+
+if (!previousID) {	
+	var previousID = "form2";	
+	}
+
+
+// -->
+</script>
+</head>
+<body  onload="showForm(2);self.focus; javascript:hideMsg();">
+<div id="content">
+<div id="navbar"><table cellspacing="0" cellpadding="0"><tr><td onMouseOver="trOver(this)" onMouseOut="trOut(this)"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/navbar/back_off.gif" border="0" /> Back</td>
+<td onMouseOver="trOver(this)" onMouseOut="trOut(this)"><a href="https://www.woosterstock.co.uk/v3.0/test/admin/" title="Home" target="_top"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/navbar/home.gif" border="0" /> Home</a></td>
+<td onMouseOver="trOver(this)" onMouseOut="trOut(this)"><a href="/v3.0/test/admin/company_edit.php?com_id=53&viewForm=2&" title="Refresh this page" target="_self"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/navbar/refresh.gif" border="0" /> </a></td>
+<td onMouseOver="trOver(this)" onMouseOut="trOut(this)"><a href="client_search.php" title="company Search" target="_self"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/navbar/search.gif" border="0" /> Client Search</a></td>
+<td onMouseOver="trOver(this)" onMouseOut="trOut(this)" onClick="trClick('bug.php?bug_page=/v3.0/test/admin/company_edit.php?com_id%3D53%26viewForm%3D2%26msg%3DUpdate%2BSuccessful')"><a href="bug.php?bug_page=/v3.0/test/admin/company_edit.php?com_id%3D53%26viewForm%3D2%26msg%3DUpdate%2BSuccessful" title="Bug Report" target="_self"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/navbar/bug.gif" border="0"></a></td>
+</tr></table></div>
+<form name="testForm" id="testForm" method="post" action="/v3.0/test/admin/company_edit.php" enctype="text" >
+<div id="standard_form">
+<input type="hidden" name="action" id="action" value="update" />
+<input type="hidden" name="com_id" id="com_id" value="53" />
+<input type="hidden" name="searchLink" id="searchLink" value="" />
+<h1> </h1><fieldset>
+<legend style="cursor:pointer" onClick="javascript:showHide('form1');">Company</legend>
+<div id="form1" style="display:none"><div>
+<label for="com_typex" class="formLabel" id="label">Profession</label>
+<span class="required">
+<select name="com_type" id="com_type" style="width:320px">
+  <option value="20">Architect</option>
+  <option value="15">Car Hire</option>
+  <option value="12">Cleaner</option>
+  <option value="14">Courier</option>
+  <option value="7">Electrician</option>
+  <option value="1">Estate Agent</option>
+  <option value="13">Gas/Heating Engineer</option>
+  <option value="19">Graphic Designer</option>
+  <option value="5">IFA</option>
+  <option value="3">Lender</option>
+  <option value="11">Mortgage Broker</option>
+  <option value="8">Painter Decorator</option>
+  <option value="6">Plumber</option>
+  <option value="18">Press & Advertising</option>
+  <option value="17" selected="selected">Property Developer</option>
+  <option value="10">Property Finder</option>
+  <option value="21">Property Management</option>
+  <option value="2">Solicitor</option>
+  <option value="9">Structural Engineer</option>
+  <option value="4">Surveyor</option>
+  <option value="16">Technical Support</option>
+</select>
+</span>
+
+</div>
+<div>
+<label for="com_titlex" class="formLabel" id="label">Company Name</label>
+<input type="text" name="com_title" id="com_title" value="Peters Property Developer Company Ltd" style="width:320px" />
+
+</div>
+<div>
+<label for="Newx" class="formLabel" id="label">Telephone</label>
+<input type="text" name="telnew" id="telnew" value="" />
+<select name="telnewtype" id="telnewtype">
+  <option value="Mobile">Mobile</option>
+  <option value="Work">Work</option>
+  <option value="Home">Home</option>
+  <option value="Fax">Fax</option>
+  <option value="Pager">Pager</option>
+  <option value="Abroad">Abroad</option>
+  <option value="Other">Other</option>
+</select>
+ 
+</div>
+<div>
+<label for="com_emailx" class="formLabel" id="label">Email</label>
+<div id="tooltip"><a href="javascript:void(0);" onMouseover="showhint('Must be a valid email address', this, event, '180px')"><img src="https://www.woosterstock.co.uk/v3.0/test/admin//img/icons/help.gif" width="16" height="16" border="0"></a></div><span class="required">
+<input type="text" name="com_email" id="com_email" value="" style="width:320px" maxlength="255" />
+</span>
+
+</div>
+<div>
+<label for="com_webx" class="formLabel" id="label">Website</label>
+<input type="text" name="com_web" id="com_web" value="http://" style="width:320px" maxlength="255" />
+
+</div>
+<div>
+<input type="submit" name="form1" id="form1" value="Save Changes" class="submit" />
+
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend style="cursor:pointer" onClick="javascript:showHide('form2');">Address</legend>
+<div id="form2" style="display:none"><table width="95%" cellpadding="3" cellspacing="2" align="center"><tr>
+		<td><strong>58  Forest Hill Road  London SE22 0RS</strong> (Work)</td>	
+		<td colspan="2" width="32">(default)</td>
+		</tr><tr>
+		<td>3  Beauval Road  London SE22 8UG (Work)</td>	
+		<td width="16"><a href="?do=addr_default&com_id=53&pro_id=1182&return=%2Fv3.0%2Ftest%2Fadmin%2Fcompany_edit.php%3Fcom_id%3D53%26viewForm%3D2%26msg%3DUpdate%2BSuccessful&viewForm=2"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/icons/tick.gif" width="16" height="16" border="0" alt="Make default" /></a></td>
+		<td width="16"><a href="javascript:confirmDelete('Are you sure you want to delete this address?','?do=addr_delete&com_id=53&pro_id=1182&return=%2Fv3.0%2Ftest%2Fadmin%2Fcompany_edit.php%3Fcom_id%3D53%26viewForm%3D2%26msg%3DUpdate%2BSuccessful&viewForm=2');"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/icons/cross.gif" width="16" height="16" border="0" alt="Delete" /></a></td>
+		</tr><tr><td colspan="3"><hr></td></tr></table><input type="hidden" name="p2c_type" id="p2c_type" value="Work" />
+<div id="lookup"><input type="hidden" name="lookup_type" id="lookup_type" value="by_freetext" />
+<input type="hidden" name="scope" id="scope" value="pro" />
+<div>
+<label for="numberx" class="formLabel" id="label">Building Number</label>
+<input type="text" name="number" id="number" value="" style="width:320px;" />
+
+</div>
+<div>
+<label for="streetx" class="formLabel" id="label">Street</label>
+<input type="text" name="street" id="street" value="" style="width:320px;" />
+
+</div>
+<div>
+<label for="postcodex" class="formLabel" id="label">Postcode</label>
+<input type="text" name="postcode" id="postcode" value="" style="width:100px;" />
+<input type="button" name="" id="" value="Get Address" class="button" onClick="javascript:ajax_lookup();" />
+<div id="systemWorking" style="display:none" class="inline"><img src="https://www.woosterstock.co.uk/v3.0/test/admin/img/ajax-loader.gif" width="16" height="16" alt="Loading..." title="" /></div>
+</div>
+<div id="inset">If the address is outside the UK click <a href="javascript:ajax_manual();">here</a></div></div><div id="placeholder" style="display:none"></div></div>
+</fieldset>
+
+</form>
+</div>
+<div id="hint"></div><script type="text/javascript">	
+new Ajax.Autocompleter("com_company","hint","ajax_comtact.php");
+</script>
+
+	<script type="text/javascript" language="javascript">
+	<!--
+	function hideMsg(){
+		setTimeout("hideMsgDiv()",1500);
+		}
+	function hideMsgDiv() {
+		new Effect.Fade("floating_message");
+		}
+	-->
+	</script><div id="notify"><div id="floating_message">Update Successful</div></div>
+</body>
+</html>

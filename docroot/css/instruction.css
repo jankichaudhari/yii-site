@@ -1,0 +1,89 @@
+a:link {
+    text-decoration : none;
+}
+
+.feature-box {
+    display : inline;
+    float   : left;
+    width   : 226px;
+}
+
+.sotTable {
+    width           : 100%;
+    border-collapse : collapse;
+}
+
+.control-group {
+    clear : both;
+}
+
+.shaded .btn {
+    margin-left : 5px;;
+}
+
+/*Owners*/
+.deleteClient {
+    float : left;
+    width : 30px;
+}
+
+.addClient {
+    margin : 7px 7px 7px 28px;
+}
+
+/*Owners*/
+
+/*Production */
+.feature-box {
+    display : inline;
+    float   : left;
+    width   : 226px;
+}
+
+.control-btn {
+    float  : left;
+    margin : 0px 5px 0px 5px;
+}
+
+.tabBar {
+    position    : fixed;
+    width       : 90%;
+    padding-top : 10px;
+}
+
+.goToElement {
+    background-color : #FF9900;
+}
+
+.leftParticular {
+    display : inline;
+    float   : left;
+    /*width: 38%;*/
+    width   : 446px;
+    /*min-width:300px;*/
+}
+
+.rightParticular {
+    display     : inline;
+    float       : left;
+    width       : 510px;
+    margin-left : 10px;
+}
+
+.rightParticular .controls {
+    margin-left : 0px;
+}
+
+.rightParticular .control-label {
+    margin-right : 14px;
+}
+
+.row-fluid > .span12 {
+    min-width : 1000px;
+}
+
+/*Production*/
+
+.DIY {
+    background : rgb(255, 236, 213) !important;
+}

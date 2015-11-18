@@ -1,0 +1,17 @@
+.top-properties {
+  counter-reset : top-properties;
+  .orange-big-heading {
+      padding: 24px 12px 12px 12px;
+  }
+
+  .title a {
+    &:before {
+      color             : @orange;
+      content           : counter(top-properties) ". ";
+      counter-increment : top-properties;
+    }
+  }
+  .top-properties-orange-square {
+    .hide();
+  }
+}

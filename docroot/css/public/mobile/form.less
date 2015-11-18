@@ -1,0 +1,96 @@
+.form-input-style {
+  color            : @grey-light-0;
+  background-color : @white;
+  border           : 1px solid @grey-light;
+  margin           : 0;
+  width            : 100%;
+  height           : auto;
+  line-height      : normal;
+  font-size        : inherit;
+  padding          : 4px;
+  .box-sizing();
+  -webkit-appearance: none;
+}
+
+input {
+  .form-input-style;
+  &[type="text"] {
+    .placeholder(@grey-light-0);
+  }
+  &[type="password"] {
+    .form-input-style;
+  }
+  &[type="radio"] {
+    width : auto;
+    &.no-margin {
+      margin : 0;
+    }
+    &.left-margin {
+      margin : 0 0 0 8px;
+    }
+    &.right-margin {
+      margin : 0 8px 0 0;
+    }
+  }
+  &[type="submit"] {
+    background-color : @orange;
+    border           : 1px solid @orange;
+  }
+  &[type="reset"] {
+    background-color : @grey-light-0;
+    border           : 1px solid @grey-light-0;
+  }
+}
+
+textarea {
+  .form-input-style;
+  .placeholder(@grey-light-0);
+  height : 100%;
+  resize : none;
+}
+
+select {
+  .form-input-style;
+}
+
+.input-large {
+  font-size        : 8.2rem;
+  line-height      : normal !important;
+  height           : auto !important;
+  background-color : @white !important;
+  color            : @grey-light-1 !important;
+  padding          : 0 4px;
+}
+
+.btn {
+  .form-input-style;
+  padding         : 5px 0;
+  border          : 1px solid @grey-light-0;
+  background      : @grey-light-0;
+  color           : @white;
+  display         : block;
+  text-decoration : none;
+
+  &.half-width {
+    width : 100%;
+  }
+}
+
+a.btn {
+  text-align : center;
+  border     : 1px solid @grey-light-0;
+}
+
+.radio-label {
+  &.left-margin {
+    margin-left : 8px;
+  }
+
+  &.right-margin {
+    margin-right : 8px;
+  }
+
+  .radio-label .no-margin {
+    margin : 0;
+  }
+}

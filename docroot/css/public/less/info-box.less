@@ -1,0 +1,156 @@
+.info-box {
+  margin-bottom : 24px;
+
+  &.last {
+    margin-bottom : 0;
+  }
+
+  > .inner-padding {
+    padding : 8px 24px;
+  }
+
+  .header {
+    font-size     : 18px;
+    height        : 24px;
+    font-weight   : bold;
+    margin-bottom : 8px;
+    text-transform: uppercase;
+  }
+
+  .row-fluid {
+    margin-bottom : 12px;
+  }
+
+  .info-row {
+    margin : 8px 0;
+    line-height    : 32px;
+    vertical-align : middle;
+    height         : 32px;
+    &.first {
+      margin : 0 0 8px 0;
+    }
+
+    &.last {
+      margin : 8px 0 0 0;
+    }
+  }
+
+  .narrow-info-row {
+    margin : 4px 0;
+    line-height    : 16px;
+    vertical-align : middle;
+    &.first {
+      margin : 0 0 4px 0;
+    }
+
+    &.last {
+      margin : 4px 0 0 0;
+    }
+  }
+
+  a {
+    color : @grey-dark;
+  }
+
+  a:hover {
+    color : @orange;
+  }
+
+  .icon {
+    display      : block;
+    span {
+      width        : 24px;
+      height       : 24px;
+      display      : block;
+      float        : left;
+      margin-right : 8px;
+      margin-top   : 4px;
+      background-color      : transparent;
+      background-image      : url(/images/sys/options-icons.png);
+      background-repeat     : no-repeat;
+      background-attachment : scroll;
+
+      &.map {
+        background-position : -25px -25px;
+      }
+      &.streetview {
+        background-position : -25px -75px;
+      }
+      &.mail {
+        background-position : -25px -125px;
+      }
+      &.printer {
+        background-position : -25px -175px;
+      }
+      &.floorplan {
+        background-position : -25px -225px;
+      }
+      &.epc {
+        background-position : -25px -275px;
+      }
+
+    }
+
+    &:hover{
+      color: @orange;
+      span{
+        &.map{
+          background-position : -75px -25px;
+        }
+        &.streetview {
+          background-position : -75px -75px;
+        }
+        &.mail {
+          background-position : -75px -125px;
+        }
+        &.printer {
+          background-position : -75px -175px;
+        }
+        &.floorplan {
+          background-position : -75px -225px;
+        }
+        &.epc {
+          background-position : -75px -275px;
+        }
+      }
+    }
+
+  }
+
+
+  &.nearest-transport-widget{
+    .inner-padding{
+      font-size: 14px;
+      padding: 12px 24px;
+      font-weight: bold;
+
+      .header{
+        margin-bottom: 20px;
+      }
+
+      .station-icon{
+        padding-right: 8px;
+      }
+
+      .station-info{
+        font-size: 10px;
+        line-height: normal;
+      }
+
+      .journey-button{
+        a{
+          color: @orange;
+          font-size: 12px;
+          &:hover{
+            color: @red;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

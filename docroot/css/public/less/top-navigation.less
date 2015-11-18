@@ -1,0 +1,92 @@
+.menu-trigger {
+  display : none;
+}
+
+.top-nav-container {
+  min-width     : 1080px;
+  border-bottom : 1px solid @grey-light;
+
+  .top-nav {
+    text-align : center;
+    font-size  : 0;
+
+    ul {
+      background   : @white;
+      border-right : 1px solid @grey-light;
+      display      : inline-block;
+      padding      : 0;
+      margin       : 0;
+
+      li {
+        display     : inline-block;
+        float       : left;
+        border-left : 1px solid @grey-light;
+
+        a {
+          display         : inline-block;
+          color           : @grey-dark;
+          text-decoration : none;
+          font-weight     : bold;
+          font-size       : 14px;
+          border-bottom   : 4px solid transparent;
+          height          : 27px;
+          line-height     : 30px;
+          padding         : 0 16px;
+
+          &.active, &:hover {
+            background-color : #f1f1f1;
+            border-bottom    : 4px solid @grey-dark;
+          }
+
+          &.active:after, &:hover:after {
+            display       : none;
+            content       : '';
+            border-bottom : 3px solid @grey-dark;
+            border-left   : 3px solid transparent;
+            border-right  : 3px solid transparent;
+            width         : 1px;
+            margin        : -6px auto 0;
+          }
+        }
+
+        &.drop-down-menu {
+          position : relative;
+          ul {
+            position   : absolute;
+            text-align : justify;
+            left       : 0;
+            top        : 31px;
+            z-index    : 1200;
+            border     : 1px solid @grey-light;
+            display    : none;
+
+            li {
+              position    : relative;
+              min-width   : 204px;
+              border-left : none;
+
+              a#drop-down-menu-sales {
+                position         : relative;
+                top              : -1px;
+                background-color : #ffffff;
+                width            : 60px
+              }
+            }
+          }
+
+          a:hover {
+            color         : @orange;
+            background    : none;
+            border-bottom : 4px solid transparent;
+          }
+        }
+
+        &:hover ul, ul:hover ul {
+          display : inline-block;
+        }
+
+      }
+    }
+
+  }
+}

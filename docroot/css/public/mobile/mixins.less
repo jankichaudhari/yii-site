@@ -1,0 +1,64 @@
+.showProperty(@property,@value,@unit:'px') {
+  .property() when (@property = 'font-size') {
+    font-size : ~"@{value}@{unit}";
+  }
+
+  .property() when (@property = 'width') {
+    width : ~"@{value}@{unit}";
+  }
+
+  .property() when (@property = 'min-height') {
+    min-height : ~"@{value}@{unit}";
+  }
+
+  .property() when (@property = 'height') {
+    height : ~"@{value}@{unit}";
+  }
+
+  .property() when (@property = 'line-height') {
+    line-height : ~"@{value}@{unit}";
+  }
+  .property();
+}
+
+.mediaScreens(@limit, @property, @value, @difference, @unit:'px', @minimumValue : 0) {
+  .mediaLoop  (@l) when (@l >= 0) {
+    @screenName: "screen@{l}";
+    @screenFullName: "@{screenName}";
+    @diff: (@limit - @l);
+    @sizeDiff : (@diff * @difference);
+    @sizeValue: (@value - @sizeDiff);
+    .displayValue() when (@sizeValue >= @minimumValue) {
+      @media @@screenFullName{
+        .showProperty(@property, @sizeValue, @unit);
+      }
+    }
+    .displayValue();
+    .mediaLoop (@l - 1);
+  }
+
+  .mediaLoop(0) {
+  }
+;
+  .mediaLoop(@limit);
+}
+
+.separate-block(@width:100%,@side-paddings:0) {
+  width       : @width;
+  padding: 0 @side-paddings;
+  margin-left : 0;
+  float       : none;
+  .clearfix();
+  .autoMargin();
+  .box-sizing();
+}
+
+.block-border(@position:bottom) {
+  .position() when (@position = top) {
+    border-top : 1px solid @grey-darker-1;
+  }
+  .position() when (@position = bottom) {
+    border-bottom : 1px solid @grey-darker-1;
+  }
+  .position();
+}

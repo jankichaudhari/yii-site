@@ -1,0 +1,111 @@
+<?php
+/**
+ * line 1 - is a flat number
+ * line 2 - is a house name
+ * line 3 - is a road name
+ * line 5 - is a city name
+ *
+ * postcode in a format M1 1AA - incrementing numbers (i.e. M1 1AA, M2 1AA
+ *
+ * lat, lng, postcodeAnywhereId whould only be set up if needed.
+ *
+ */
+return $address = array(
+	array(
+		'id'                      => 1,
+		'line1'                   => 'Flat Number 1',
+		'line2'                   => 'House Number 1',
+		'line3'                   => 'Street Name 1',
+		'line4'                   => '0',
+		'line5'                   => 'City Name 1',
+		'postcode'                => 'M1 1AA',
+		'lat'                     => 0.000000,
+		'lng'                     => 0.000000,
+		'postcodeAnywhereID'      => '0',
+		'postcodeAnywhereGeoData' => '',
+		'areaId'                  => null,
+		'created'                 => '2013-04-04 13:31:47',
+		'createdBy'               => 92,
+		'modified'                => '2013-04-04 13:31:51',
+		'modifiedBy'              => 92,
+		'searchString'            => 'Flat Number 1 House Number 1 Street Name 1 0 City Name 1 M1 1AA',
+	),
+	array(
+		'id'                      => 2,
+		'line1'                   => 'Flat Number 2',
+		'line2'                   => 'House Number 2',
+		'line3'                   => 'Street Name 2',
+		'line4'                   => '0',
+		'line5'                   => 'City Name 2',
+		'postcode'                => 'M2 1AA',
+		'lat'                     => 0.000000,
+		'lng'                     => 0.000000,
+		'postcodeAnywhereID'      => '0',
+		'postcodeAnywhereGeoData' => '',
+		'areaId'                  => null,
+		'created'                 => '2013-04-04 13:31:47',
+		'createdBy'               => 92,
+		'modified'                => '2013-04-04 13:31:51',
+		'modifiedBy'              => 92,
+		'searchString'            => 'Flat Number 2 House Number 2 Street Name 2 0 City Name 2 M2 1AA',
+	),
+	array(
+		'id'                      => 3,
+		'line1'                   => 'Flat Number 3',
+		'line2'                   => 'House Number 3',
+		'line3'                   => 'Street Name 3',
+		'line4'                   => '0',
+		'line5'                   => 'City Name 3',
+		'postcode'                => 'M3 1AA',
+		'lat'                     => 0.000000,
+		'lng'                     => 0.000000,
+		'postcodeAnywhereID'      => '0',
+		'postcodeAnywhereGeoData' => '',
+		'areaId'                  => null,
+		'created'                 => '2013-04-04 13:31:47',
+		'createdBy'               => 92,
+		'modified'                => '2013-04-04 13:31:51',
+		'modifiedBy'              => 92,
+		'searchString'            => 'Flat Number 3 House Number 3 Street Name 3 0 City Name 3 M3 1AA',
+	),
+	array(
+		'id'                      => 4,
+		'line1'                   => 'Flat Number 4',
+		'line2'                   => 'House Number 4',
+		'line3'                   => 'Street Name 4',
+		'line4'                   => '0',
+		'line5'                   => 'City Name 4',
+		'postcode'                => 'M4 1AA',
+		'lat'                     => 0.000000,
+		'lng'                     => 0.000000,
+		'postcodeAnywhereID'      => '0',
+		'postcodeAnywhereGeoData' => '',
+		'areaId'                  => null,
+		'created'                 => '2013-04-04 13:31:47',
+		'createdBy'               => 92,
+		'modified'                => '2013-04-04 13:31:51',
+		'modifiedBy'              => 92,
+		'searchString'            => 'Flat Number 4 House Number 4 Street Name 4 0 City Name 4 M4 1AA',
+	),
+	array(
+		'id'                      => 5,
+		'line1'                   => 'Flat Number 5',
+		'line2'                   => 'House Number 5',
+		'line3'                   => 'Street Name 5',
+		'line4'                   => '0',
+		'line5'                   => 'City Name 5',
+		'postcode'                => 'M5 5AA',
+		'lat'                     => 0.000000,
+		'lng'                     => 0.000000,
+		'postcodeAnywhereID'      => '0',
+		'postcodeAnywhereGeoData' => '',
+		'areaId'                  => null,
+		'created'                 => date("Y-m-d H:i:s"),
+		'createdBy'               => 92,
+		'modified'                => date("Y-m-d H:i:s"),
+		'modifiedBy'              => 92,
+		'searchString'            => 'Flat Number 5 House Number 5 Street Name 5 0 City Name 5 M5 5AA',
+	),
+);
+
+

@@ -1,0 +1,47 @@
+/**
+ * Extracted these styles here not to mess up default.css
+ **/
+.input-toggle-edit .input {
+    position : relative;
+    display  : none;
+}
+
+.input-toggle-edit .value {
+    border-bottom : 1px dotted #555;
+    cursor        : text;
+}
+
+.input-toggle-edit .input .confirm {
+    position      : absolute;
+    right         : 10px;
+    top           : 0;
+    cursor        : pointer;
+    color         : white;
+    background    : #4fa249;
+    border-radius : 3px;
+    font-size     : 12px;
+    line-height   : 16px;
+    padding       : 0 3px;
+}
+
+.people-table {
+    border-collapse : collapse;
+}
+
+.people-table td {
+    border-left    : 1px solid #a5a5a5;
+    vertical-align : top;
+    padding        : 10px;
+
+}
+
+.people-table td:first-child {
+    border-left : 0;
+}
+
+.client-form {
+}
+
+.client-form .symbol-count.danger {
+    color : #720002;
+}

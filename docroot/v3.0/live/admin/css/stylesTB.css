@@ -1,0 +1,312 @@
+
+
+/* 
+standard form defaults for input tags 
+*/
+
+#a_tabbar input {
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#7F9DB9;
+	/*height:18px;*/
+	padding:.15em .15em .15em .15em;	
+	/*letter-spacing:1px;*/
+	}	
+#a_tabbar select { 
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#7F9DB9;
+/*	height:22px;*/
+	}	
+#a_tabbar textarea { 
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#7F9DB9;
+	/*height:22px;*/
+	padding:.15em .15em .15em .15em;
+	}	
+/* 
+radio and checkboxes are enclosed with label tag 
+so here we turn off the ugly border around each element 
+*/
+#a_tabbar label input  { 
+	border-width:0px;
+	border-style:none;
+	height:22px;
+	background: transparent;
+	}
+	
+table.checkbox_table {
+	width:500px;
+	border-collapse:collapse;
+	}
+
+	
+#a_tabbar select.select_multi { 
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-style:solid;
+	border-color:#7F9DB9;
+	}	
+
+#a_tabbar {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	} 	
+#a_tabbar legend {
+	border: 1px solid #ffCC00;
+	width: 170px;
+	position: relative;
+	font-weight: bold;
+	font-size: 12.5px;
+	color: #ff6600;
+	padding: 2px 6px 2px 6px ; 	
+	top: -16px;
+	display: block;
+	background-color:#FFFFFF;
+	}	
+#a_tabbar legend a {
+	color: #ff6600;
+	text-decoration: none;		
+	}
+
+#a_tabbar .label {  
+	font-size: 12px;
+    float: left;     
+    padding: 5px 10px;	
+    text-align: right;  
+	color: #666666;
+	width: 158px;    
+	} 
+	
+#a_tabbar  .formLabel {  
+	display: block;
+	font-size: 12px;
+    float: left;  
+    width: 163px;  
+    padding: 5px 10px;	
+    text-align: right;  
+	color: #666666;
+	}
+#a_tabbar label.formLabel a {  
+	color: #666666;
+	text-decoration: none;
+	/*border-bottom-width:1px;
+	border-bottom-style:dotted;*/
+	} 
+
+#a_tabbar h1 {
+	margin-bottom:5px;
+	}
+#a_tabbar div.standard_form  {  
+    margin-top: 12px;  
+	} 
+
+#a_tabbar .standard_form div {  
+    margin-top: .4em;  
+    margin-bottom: .4em;  
+    padding: 0;  
+    display: block;  
+	} 
+#a_tabbar .standard_form div.inline {  
+    display:inline;
+	}
+#a_tabbar .standard_form hr {
+	color: #ffCC00;
+	height: 1px;
+	} 
+	 
+#a_tabbar textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	} 
+#a_tabbar .noteInput {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	width:400px;
+	background-image:url(../../../../images/sys/admin/note_bg.gif);
+	background-repeat:repeat;
+	overflow:auto;
+	background-color:#FFFFFF;	
+	} 
+
+#a_tabbar textarea.noteInput {	
+	height:40px;
+	border:1px solid #CCCCCC;
+	}
+#a_tabbar div.noteInfo {	
+	font-size:10px;
+	color:#ff9900;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	background-color:#FFFFFF;
+	}
+#a_tabbar div.noteInfo img {	
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	vertical-align: middle;
+	border-style:none;
+	}
+#a_tabbar div.noteLink {	
+	font-size:10px;
+	float:right;
+	color:#ff9900;
+	padding:0px 3px 0px 0px;
+	margin:0px 0px 0px 5px;
+	}
+#a_tabbar div.noteLink a {
+	text-decoration:none;
+	color:#ff9900;	
+	}
+#a_tabbar div.noteLink img {	
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	vertical-align: middle;
+	border-style:none;
+	}
+#a_tabbar div.note {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0px 0px 10px 0px;
+	margin:0px 3px 0px 3px;
+	} 	
+#a_tabbar div.noteWrapper {
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	width:404px;
+	overflow:auto;
+	background-color:#FFFFFF;
+	border: 1px solid #CCCCCC;
+    float: left;  
+	}
+#a_tabbar div.noteLabel {  
+	display: block;
+	font-size: 12px;
+    float: left;  
+    width: 163px;  
+    padding: 0px 10px;	
+    text-align: right;  
+	color: #666666;
+	} 
+	
+	
+	
+	
+#a_tabbar .required {
+	
+	padding: 0px;
+	border: 0px;
+	}
+
+#a_tabbar .required input { 
+	background-color: #FFDE91;
+	}	
+#a_tabbar .required select {
+	background-color: #FFDE91;
+	}	
+#a_tabbar .required textarea { 
+	background-color: #FFDE91;/*FFF3D3*/
+	}	
+#a_tabbar .required label input  { 
+	font-size: 12px;
+	background: transparent;
+	}
+	
+#a_tabbar .standard_form div .readonly {  
+	width: 300px;
+	border-width: 0;
+	font-weight: bold;
+	} 
+#a_tabbar .standard_form div .fname {  
+	width: 100px;
+	} 	
+#a_tabbar .standard_form div .sname {  
+	width: 195px;
+	} 	
+#a_tabbar .standard_form div .addr {  
+	width: 300px;
+	} 	
+#a_tabbar .standard_form div .pc {  
+	width: 100px;
+	} 	
+#a_tabbar .standard_form div .narrow {  
+	width: 50px;
+	} 
+#a_tabbar .standard_form div .medium {  
+	width: 150px;
+	} 
+#a_tabbar .standard_form div .wide {  
+	width: 250px;
+	} 
+#a_tabbar .standard_form div.inset { 
+	margin-left: 183px;  
+	} 		
+#a_tabbar .standard_form .inputInvisible {
+	width:250px;
+	border: 0px;
+	background-color: #FFFCE6;
+	}
+	
+#a_tabbar .appCancelled {
+	color: #999999;
+	}
+#a_tabbar .appDeleted {
+	color: #999999;
+	}
+	
+
+
+#a_tabbar .submit {  
+    clear: both;
+	margin-left: 183px;  
+    text-align: center;  
+	border: 1px solid #333333;
+	border-top-color: #999999;
+	border-left-color: #999999;
+	padding:.15em .15em .15em .15em;
+	background-color: #E3E3E3;
+	color: #000000;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffe3e3e3');
+	}  
+
+#a_tabbar .button {  
+    text-align: center;  	
+	border: 1px solid #333333;
+	border-top-color: #999999;
+	border-left-color: #999999;
+	padding:.15em .15em .15em .15em;
+	background-color: #E3E3E3;
+	color: #000000;
+	font-size: 10px;
+	font-weight: normal;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffe3e3e3');
+    }  
+#a_tabbar .image {  
+	height:16px;
+	width: 16px;
+    }  
+
+#a_tabbar p.appInfo {
+	margin: 0px;
+	padding: 0px;
+	padding-left:20px;
+	margin-left: 163px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	width:400px;
+	/*height:18px; */
+	color:#666666;
+	background-image: url(../../../../images/sys/admin/icons/information.gif);
+	background-repeat:no-repeat;
+
+	}

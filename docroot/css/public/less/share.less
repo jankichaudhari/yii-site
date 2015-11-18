@@ -1,0 +1,44 @@
+div.shareButton {
+  display  : inline-block;
+  position : relative;
+  top      : 3px;
+  left     : 10px;
+
+  a {
+    color             : @blue-facebook;
+    background-image  : url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yi/r/oX3h85a2YJF.png);
+    background-size   : auto;
+    background-repeat : no-repeat;
+    display           : inline-block;
+    height            : 14px;
+    width             : 100%;
+    padding-left      : 18px;
+  }
+
+  .facebook-share, .twitter-share {
+    float     : left;
+    font-size : 12px;
+  }
+
+  .facebook-share {
+    background            : #eceef5;
+    border-radius         : 3px;
+    -moz-border-radius    : 3px;
+    -webkit-border-radius : 3px;
+    border                : 1px solid #cad4e7;
+    cursor                : pointer;
+    white-space           : nowrap;
+    color                 : @blue-facebook;
+    padding               : 2px 5px 1px 5px;
+    margin-right          : 4px;
+  }
+
+  .twitter-share {
+    &:after {
+      clear   : both;
+      display : block;
+      content : '';
+    }
+  }
+
+}

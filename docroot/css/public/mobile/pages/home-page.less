@@ -1,0 +1,136 @@
+.home {
+  .row-page-top-content {
+    &.spaced {
+      margin-top : 0;
+    }
+    .cell-left {
+      .hide();
+    }
+
+    .cell-right {
+      .separate-block();
+
+      form {
+        .block-border();
+        .home-search-property {
+          .form-header {
+            .hide;
+          }
+          .inner-padding {
+            .clearfix();
+          }
+          .mobile-row-half-cell {
+            margin-bottom : 0;
+          }
+        }
+
+
+      }
+      .options-tray {
+        .block-border();
+        .clearfix();
+        .inner-padding {
+          .row {
+            margin-bottom : 0;
+          }
+          a.btn {
+            background : @grey-light-0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-container {
+
+  .row-property-categories {
+    .hide();
+  }
+
+  .home-container-small {
+    .hide();
+  }
+
+  .latest-property-featured-video {
+    margin-bottom : 0;
+    .block-border();
+    .latest-property {
+      color          : @grey-darker-1;
+      .header{
+        padding: 24px 12px;
+        font-weight: bold;
+        border-bottom: 1px solid @grey-lighter-2;
+      }
+      .latest-property-box{
+        border-bottom-color: @grey-lighter-2;
+        .status {
+          color          : @red;
+          text-transform : capitalize;
+          &.available {
+            color : @orange;
+          }
+        }
+      }
+    }
+  }
+
+  .home-orange-headline{
+    padding: 24px 0;
+    a{
+      color: @grey-darker-1;
+      &:after{
+        content: '››';
+      }
+    }
+  }
+
+  .home-gray-description {
+    .hide();
+  }
+
+  .row-most-viewed-pick-agent {
+    .block-border();
+    margin-bottom : 0;
+
+    .pick-pedigree {
+      .separate-block();
+
+      .row .span4 {
+        &.pick-pedigree-picture {
+          .hide();
+        }
+        &.pick-pedigree-content {
+          .separate-block();
+          padding: 0 12px;
+        }
+      }
+
+    }
+  }
+
+  .help-van {
+    .block-border();
+    .help-van-picture {
+      .hide();
+    }
+    .help-van-content {
+      .separate-block();
+      padding: 0 12px;
+    }
+  }
+
+  .park-open-space {
+    margin-bottom : 0;
+    .separate-block();
+
+    .park-open-space-content{
+      .separate-block();
+      padding: 0 12px;
+    }
+    .home-page-park-gallery-container{
+      .hide();
+    }
+  }
+
+}

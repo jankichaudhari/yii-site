@@ -1,0 +1,163 @@
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+.grid-view
+{
+	padding: 0px 0;
+}
+
+.grid-view table.items
+{
+	clear: both;
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #D0E3EF solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	font-size: 0.9em;
+	border: 1px white solid;
+	padding: 0.3em;
+}
+
+.grid-view table.items th
+{
+	color: white;
+	/*background: url("bg.gif") repeat-x scroll left top white;*/
+    background: #F90;
+	text-align: center;
+}
+
+.grid-view table.items th a
+{
+	color: #EEE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grid-view table.items th a:hover
+{
+	color: #FFF;
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	/*background: #F8F8F8;*/
+    background: #FFFCE6;
+}
+
+.grid-view table.items tr.odd
+{
+	/*background: #E5F1F4;*/
+    background: #feffcd;
+}
+
+.grid-view table.items tr.selected
+{
+	/*background: #FFDE91;*/
+}
+
+.grid-view table.items tr:hover
+{
+	/*background: #ECFBD4;*/
+    background: #FFDE91;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 5px 0 5px 0;
+	text-align: right;
+    float:right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 5px 0;
+	text-align: left;
+    /*float:left;*/
+    /*clear:left;*/
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+a.export-csv {
+}
+
+table.sublist {
+    width : 100%;
+    table-layout: fixed;
+}
+
+.grid-view table.sublist td {
+    font-size      : 0.9em;
+    border         : 0;
+    border-bottom  : 1px dotted #dedede;
+    padding        : 0;
+    vertical-align : top;
+}
+
+.grid-view table.sublist tr:nth-child(odd) {
+    background : transparent
+}
+
+.grid-view table.sublist tr:nth-child(even) {
+    background : transparent
+}
+
+.grid-view table.sublist tr {
+    border : 0;
+    cursor : pointer;
+
+}
+
+.grid-view table.sublist tr a {
+
+}
+

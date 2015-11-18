@@ -1,0 +1,804 @@
+body {
+    margin      : 0px;
+    padding     : 0px;
+    font-family : verdana, sans-serif;
+    font-size   : 12px;
+}
+
+a, a:link, a:visited, a:hover {
+    color : blue;
+}
+
+.page-content {
+    margin-left : 145px;
+}
+
+/*************************************************************
+ * Grid system */
+.container-fluid {
+    padding-left  : 20px;
+    padding-right : 20px;
+    *zoom         : 1;
+}
+
+.container-fluid:before, .container-fluid:after {
+    display : table;
+    content : "";
+}
+
+.container-fluid:after {
+    clear : both;
+}
+
+.clearfix {
+    *zoom : 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display : table;
+    content : "";
+}
+
+.clearfix:after {
+    clear : both;
+}
+
+.row-fluid {
+    width : 100%;
+    *zoom : 1;
+}
+
+.row-fluid:before, .row-fluid:after {
+    display : table;
+    content : "";
+}
+
+.row-fluid:after {
+    clear : both;
+}
+
+.row-fluid > [class*="span"] {
+    float       : left;
+    margin-left : 2.127659574%;
+}
+
+.row-fluid > [class*="span"]:first-child {
+    margin-left : 0;
+}
+
+.row-fluid > .span1 {
+    width : 6.382978723%;
+}
+
+.row-fluid > .span2 {
+    width : 14.89361702%;
+}
+
+.row-fluid > .span3 {
+    width : 23.404255317%;
+}
+
+.row-fluid > .span4 {
+    width : 31.914893614%;
+}
+
+.row-fluid > .span5 {
+    width : 40.425531911%;
+}
+
+.row-fluid > .span6 {
+    width : 48.93617020799999%;
+}
+
+.row-fluid > .span7 {
+    width : 57.446808505%;
+}
+
+.row-fluid > .span8 {
+    width : 65.95744680199999%;
+}
+
+.row-fluid > .span9 {
+    width : 74.468085099%;
+}
+
+.row-fluid > .span10 {
+    width : 82.97872339599999%;
+}
+
+.row-fluid > .span11 {
+    width : 91.489361693%;
+}
+
+.row-fluid > .span12 {
+    width : 99.99999998999999%;
+}
+
+/* Grid system
+ ************************************************************/
+
+/*************************************************************
+ * Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin         : 10px 0;
+    font-family    : inherit;
+    font-weight    : bold;
+    line-height    : 1;
+    color          : inherit;
+    text-rendering : optimizelegibility;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-weight : normal;
+    line-height : 1;
+    color       : #999999;
+}
+
+h1 {
+    font-size   : 36px;
+    line-height : 40px;
+}
+
+h2 {
+    font-size   : 30px;
+    line-height : 40px;
+}
+
+h3 {
+    font-size   : 24px;
+    line-height : 40px;
+}
+
+h4 {
+    font-size   : 18px;
+    line-height : 20px;
+}
+
+h5 {
+    font-size   : 14px;
+    line-height : 20px;
+}
+
+h6 {
+    font-size   : 12px;
+    line-height : 20px;
+}
+
+h1 small {
+    font-size : 24px;
+}
+
+h2 small {
+    font-size : 18px;
+}
+
+h3 small {
+    font-size : 14px;
+}
+
+h4 small {
+    font-size : 14px;
+}
+
+/* Typography
+ ************************************************************/
+
+/*************************************************************
+ * Page header */
+.page-header {
+    height     : 25px;
+    background : #FFFCE6;
+    background : url('/images/sys/admin/title_bg.gif') repeat;
+}
+
+.page-title {
+    font-size   : 15px;
+    font-weight : bold;
+    color       : #666;
+    padding     : 3px 5px;
+}
+
+/* Page header
+ ************************************************************/
+
+/*************************************************************
+ * Main menu styles (left side) */
+#main_menu {
+    width : 145px;
+    float : left;
+}
+
+#main_menu ul {
+    margin          : 0px;
+    padding         : 0px;
+    list-style-type : none;
+    font-family     : verdana, arial, sanf-serif;
+    font-size       : 12px;
+}
+
+#main_menu li {
+    margin : 0px;
+}
+
+#main_menu a {
+    display         : block;
+    padding         : 4px 2px 4px 5px;
+    margin          : 5px 0px 0px 2px;
+    background      : #FF9900;
+    text-decoration : none; /*lets remove the link underlines*/
+}
+
+#main_menu a:link, #main_menu a:active, #main_menu a:visited {
+    color       : #FFFFFF;
+    font-weight : bold;
+}
+
+#main_menu a:hover {
+    background : #FF6600;
+    color      : #ffffff;
+}
+
+#main_menu li.hl a {
+    background-color : #FF0000;
+    color            : #FFFFFF;
+}
+
+#main_menu ul li ul {
+    margin          : 0px;
+    margin-bottom   : 10px;
+    padding         : 0px;
+    list-style-type : none;
+    font-family     : arial, sanf-serif;
+    font-size       : 11px;
+}
+
+#main_menu ul li ul li {
+    margin  : 0px;
+    padding : 0px;
+}
+
+#main_menu ul li ul li a {
+    display          : block;
+    padding          : 3px 2px 3px 6px;
+    margin           : 0px 0px 0px 2px;
+    background-color : #FDEBC0;
+    text-decoration  : none;
+}
+
+#main_menu ul li ul li a:link, #main_menu ul li ul li a:active, #main_menu ul li ul li a:visited {
+    color       : #000000;
+    font-weight : bold;
+}
+
+#main_menu ul li ul li a:hover {
+    background : #FFE28A;
+    color      : #000000;
+}
+
+/* Main menu styles (left side)
+ ************************************************************/
+
+fieldset {
+    margin-top       : 16px;
+    margin-left      : 10px;
+    border           : 1px solid #ffCC00;
+    background-color : #FFFCE6;
+}
+
+legend {
+    background-color : white;
+    border           : 1px solid #ffCC00;
+    padding          : 2px 5px;
+    font-weight      : bold;
+    font-size        : 12.5px;
+    color            : #ff6600;
+}
+
+legend.title {
+    float : left;
+    width : auto;
+}
+
+legend.actions {
+    line-height    : 16px;
+    height         : 16px;
+    padding        : 2px 5px;
+    float          : right;
+    /*margin-top     : -26px;*/
+    vertical-align : middle;
+    text-align     : center;
+    cursor         : pointer;
+}
+
+legend.actions span {
+    margin : 0 3px;
+}
+
+legend.actions.left {
+    float       : left;
+    margin-left : 215px;
+}
+
+legend.actions.right {
+    float : right;
+}
+
+fieldset legend {
+    margin-right : 15px;
+    margin-top   : -16px;
+}
+
+fieldset legend.autoTitle {
+    float : left;
+    width : auto;
+}
+
+fieldset legend.actions {
+    /*margin-top : -14px;*/
+}
+
+fieldset legend.actions.left {
+    /*margin-top  : -14px;*/
+    margin-left : 0px;
+}
+
+fieldset legend.actions.bottom {
+    margin-top    : 20px;
+    margin-bottom : -20px;
+}
+
+fieldset legend.actions.left.bottom {
+    margin-top    : 20px;
+    margin-bottom : -20px;
+}
+
+/*************************************************************
+ * Misc */
+.text-right {
+    text-align : right;
+}
+
+/* Misc
+ ************************************************************/
+
+/*************************************************************
+ * Forms and buttons */
+form {
+    color : #666;
+}
+
+.control-group:after {
+    clear : both;
+}
+
+.control-group:after, .control-group:before {
+    display : table;
+    content : "";
+}
+
+.control-group {
+    margin : 7px 0;
+}
+
+form.inline .control-group {
+    margin : 3px 0;
+}
+
+.control-group.required > .control-label:after {
+    color   : #900;
+    content : '*';
+}
+
+.control-label {
+    float          : left;
+    display        : block;
+    width          : 150px;
+    text-align     : right;
+    vertical-align : middle;
+    line-height    : 24px;
+}
+
+.control-label + .controls, .controls.force-margin {
+    margin-left : 166px;
+}
+
+input[type='text'],
+input[type='password'],
+select,
+textarea {
+    padding         : 2px;
+    margin          : 0;
+    border          : 1px solid #dedede;
+    line-height     : 18px;
+    margin-bottom   : 7px;
+    width           : 270px;
+    display         : inline-block;
+    box-sizing      : content-box;
+    -moz-box-sizing : content-box;
+}
+
+form.inline input[type='text'],
+form.inline input[type='password'],
+form.inline select,
+form.inline textarea {
+    margin-bottom : 0;
+}
+
+textarea {
+    height : 120px;
+}
+
+select.multiple {
+    min-height : 24px;
+    height     : auto;
+}
+
+.controls label {
+    line-height : 24px;
+
+}
+
+.btn {
+    padding           : 2px 7px;
+    margin            : 0;
+    line-height       : 18px;
+    font-size         : 14px;
+    text-decoration   : none;
+    color             : #333;
+    background        : #E3E3E3;
+    display           : inline-block;
+    font-weight       : bold;
+    font-family       : verdana, sans-serif;
+    border            : 1px solid #333;
+    border-top-color  : #999;
+    border-left-color : #999;
+	cursor: pointer;
+
+}
+
+a.btn {
+    color : #333;
+}
+
+.btn.btn-large {
+    font-size   : 18px;
+    line-height : 22px;
+    padding     : 5px 12px;
+}
+
+.btn.btn-small {
+    font-size   : 12px;
+    line-height : 16px;
+    padding     : 2px 5px;
+}
+
+.btn.btn-smaller {
+	font-size   : 10px;
+	line-height : 14px;
+	padding     : 2px;
+}
+
+.btn.btn-danger {
+    color : #900;
+}
+
+.btn.btn-success {
+    color : green;
+}
+
+.btn.btn-warning {
+    color : #c68c26;
+}
+
+.btn.btn-primary {
+    color : #4a98ff;
+}
+
+.btn.disabled, .btn[disabled] {
+    opacity : 0.5;
+}
+
+.btn.btn-white {
+    background : white;
+}
+
+.btn.btn-old {
+    color : black;
+}
+
+.input-xxsmall, .input-twochars {
+    width : 23px !important;
+}
+
+.input-xsmall {
+    width : 60px !important;
+}
+
+.input-small {
+    width : 130px !important;
+}
+
+.input-medium {
+    width : 270px !important;
+}
+
+.input-large {
+    width : 340px !important;
+}
+
+.input-xlarge {
+    width : 410px !important;
+}
+
+.input-double {
+    width : 550px !important;
+}
+
+.input-xxlarge {
+    width : 830px !important;
+}
+
+.input-halfblock {
+    width : 50% !important;
+}
+
+.input-block {
+    width : 100% !important;
+}
+
+span.hint {
+    font-size : 11px;
+    color     : #999;
+}
+
+.input-error {
+    color  : #900;
+    border : 1px solid #900 !important;
+}
+
+.input-success {
+    color  : green;
+    border : 1px solid green !important;
+}
+
+.input-warning {
+    color  : #c68c26;
+    border : 1px solid #c68c26 !important;
+}
+
+span.required:after,
+label.required:after {
+    color   : #900;
+    content : '*';
+}
+
+div.separator {
+    height        : 10px;
+    margin-bottom : 10px;
+    border-bottom : 1px solid #aaa;
+}
+
+.error {
+    color : #900;
+}
+
+.error.box {
+    border     : 1px solid #900;
+    background : pink;
+}
+
+.warning {
+    color : #c68c26;
+}
+
+.warning.box {
+    border     : 1px solid #c68c26;
+    background : #ffebbd;
+    color      : #666;
+}
+
+.success {
+    color : green;
+}
+
+.success.box {
+    border     : 1px solid green;
+    background : #caffbe;
+}
+
+.success.box, .warning.box, .error.box {
+    margin  : 7px 7px 14px 7px;
+    padding : 5px 5px;
+}
+
+.control-group.warning > label {
+    color : #c68c26;
+}
+
+.hint {
+    color : #c68c26;
+}
+
+.control-group.error > label {
+    color : #900;
+}
+
+.control-group.error .hint {
+    color : #bf4a46;
+}
+
+.control-group.success > label {
+    color : green;
+}
+
+.control-group.success .hint {
+    color : #85cc7b;
+}
+
+.control-group.warning input[type='text'], .control-group.warning select, .control-group.warning textarea {
+    color  : #c68c26;
+    border : 1px solid #c68c26;
+}
+
+.control-group.error input[type='text'], .control-group.error select, .control-group.error textarea {
+    color  : #900;
+    border : 1px solid #900;
+}
+
+.control-group.success input[type='text'], .control-group.success select, .control-group.success textarea {
+    color  : green;
+    border : 1px solid green;
+}
+
+.control-group .text {
+    line-height : 24px;
+}
+
+input[type="text"][disabled], textarea[disabled], select[disabled] {
+    color      : #999;
+    background : #f7f7f7;
+}
+
+input[type="text"][readonly], textarea[readonly] {
+    color      : #999;
+    background : #fff;
+}
+
+div.shaded, span.shaded {
+    background-color : #ffebbd;
+}
+
+.form-buttons {
+    padding : 5px 0;
+
+}
+
+.form-buttons > .controls {
+    padding-left: 5px;
+}
+
+.form-buttons > .controls.force-margin {
+    padding-left: 0;
+}
+.form-buttons > label.control-label + .controls.force-margin {
+    padding-left: 0;
+}
+
+/* Forms and buttons
+ ************************************************************/
+
+.client-notes {
+    border        : 1px solid #dedede;
+    padding       : 3px 2px;
+    background    : white;
+    margin-bottom : 7px;
+}
+
+.client-notes:hover {
+    background : #fff9ca;
+    cursor     : pointer;
+}
+
+.client-notes .info {
+    color     : #f90;
+    font-size : 11px
+}
+
+.flash {
+    color       : white;
+    font-weight : bold;
+    padding     : 5px;
+    margin      : 10px 0;
+    border      : 1px solid #dedede;
+}
+
+.flash.success {
+    background : green;
+}
+
+.flash.warning {
+    background : #c68c26;
+}
+
+.flash.danger {
+    background : #900;
+}
+
+.flash.remove {
+
+}
+
+table.client-preferences {
+    width           : 100%;
+    border-collapse : collapse;
+    margin-top      : -1px;
+}
+
+table.client-preferences td {
+    width : 33.3333333%;
+}
+
+table.client-preferences.four-columns td {
+    width : 25%;
+}
+
+table.client-preferences.five-columns td {
+    width : 20%;
+}
+
+.devnote_container {
+    position   : absolute !important;
+    top        : 0;
+    left       : 0;
+    height     : 300px;
+    background : #e1e8a9;
+    border     : 1px solid #666;
+    box-shadow : 2px 0px 3px #666;
+}
+
+.devnote_container textarea {
+    background : #f8ffba;
+    border     : 0;
+    box-shadow : 2px 2px 3px #666;
+    width      : 100%;
+    height     : 99%;
+    resize     : none;
+    box-sizing : content-box;
+    padding    : 0;
+    margin     : 0;
+    margin-top : 15px;
+}
+
+.centered-text {
+    text-align : center;
+}
+
+.table-link {
+    color : #418aff !important;
+}
+
+.negotiator-color {
+    border  : 1px solid #666;
+    width   : 10px;
+    height  : 15px;
+    display : inline-block;
+    margin  : 0 3px;
+}
+
+.negotiator-color.empty {
+    border  : 1px solid transparent;
+}
+
+a.shaded {
+    color : #418aff !important;
+}

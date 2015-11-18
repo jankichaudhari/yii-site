@@ -1,0 +1,127 @@
+.form-input-style{
+  color           : #888888;
+  border          : 1px solid @grey-light;
+  margin          : 0;
+  width           : 100%;
+  padding         : 1px;
+  height          : 18px;
+  line-height     : 18px;
+  box-sizing      : content-box;
+  -moz-box-sizing : content-box;
+}
+
+input{
+  &[type="text"]{
+    .form-input-style;
+    .placeholder();
+  }
+  &[type="password"]{
+    .form-input-style;
+  }
+  &[type="radio"]{
+    &.no-margin {
+      margin : 0;
+    }
+    &.left-margin {
+      margin : 0 0 0 8px;
+    }
+    &.right-margin {
+      margin : 0 8px 0 0;
+    }
+  }
+}
+
+textarea {
+  .form-input-style;
+  .placeholder();
+  height : 100%;
+  resize : none;
+}
+select {
+  .form-input-style;
+}
+
+.input-large {
+  line-height : 26px !important;
+  height      : 26px !important;
+  padding     : 2px 4px !important;
+  outline     : none;
+  &::-webkit-input-placeholder {
+    text-transform: uppercase;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+    text-transform: uppercase;
+  }
+
+  &:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  background      : @grey-dark;
+  color           : @white;
+  border          : 0;
+  box-sizing      : content-box;
+  display         : inline-block;
+  font-weight     : bold;
+  height          : 24px;
+  line-height     : 24px;
+  .box-shadow(1px 1px 2px @grey-light);
+  padding         : 0;
+  text-decoration : none;
+
+  &:hover {
+    cursor     : pointer;
+    background : @grey-dark-1;
+  }
+
+  &.full-width {
+    width : 100%;
+  }
+
+  &.half-width {
+    width : 25%;
+  }
+
+  //orange button
+  &.huge-orange-button {
+    background  : @orange;
+    height: 32px;
+    line-height: 32px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+      background : #e18905;
+    }
+  }
+}
+
+a.btn{
+  font-size: 14px;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.radio-label {
+  font-weight : bold;
+  &.left-margin {
+    margin-left : 8px;
+  }
+
+  &.right-margin {
+    margin-right : 4px;
+  }
+
+  .radio-label .no-margin {
+    margin : 0;
+  }
+}

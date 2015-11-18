@@ -1,0 +1,101 @@
+/*Pager*/
+.pager-font-style{
+  float         : left;
+  font-weight   : bold;
+  font-size     : 13px;
+  margin-bottom : 24px;
+  line-height   : 24px;
+  .text-shadow(1px 1px @white);
+}
+.pager-first-last-link{
+  font-weight    : bold;
+  height         : 27px;
+  width          : 35px;
+  text-align     : center;
+  vertical-align : middle;
+  display        : none;
+}
+.pager-previous-next-link{
+  background-position : center;
+  background-repeat   : no-repeat;
+  display             : inline-block;
+  width               : 23px;
+  height              : 23px;
+  padding             : 0;
+}
+
+.listing-pager-container {
+  .pager-font-style;
+
+  ul.listing-pager {
+    padding : 0;
+    margin  : 0;
+    font-size   : 11px;
+    line-height : 100%;
+
+    a {
+      background-color : transparent;
+      font-size        : 13px;
+      width            : 23px;
+      margin-right     : 5px;
+      border           : 1px solid transparent;
+      text-align       : center;
+      vertical-align   : middle;
+      display          : inline-block;
+      padding          : 6px 0;
+      &:link,&:visited{
+        color           : @grey-dark;
+        text-decoration : none;
+      }
+    }
+
+    li {
+      display      : block;
+      float        : left;
+      margin-right : 5px;
+      &.hidden {
+        display : none;
+      }
+      &.selected a{
+        color       : @grey-dark;
+        font-weight : bold;
+        border      : 1px solid @grey-dark;
+      }
+      &.first a{
+       .pager-first-last-link;
+        background-image : url('/images/pager-left-arrow-double.png');
+      }
+      &.last a{
+        .pager-first-last-link;
+        background-image : url('/images/pager-right-arrow-double.png');
+      }
+      &.previous a{
+        .pager-previous-next-link;
+        background-image : url('/images/pager-left-arrow-single.png');
+      }
+      &.next a{
+        .pager-previous-next-link;
+        background-image : url('/images/pager-right-arrow-single.png');
+      }
+    }
+
+  }
+
+}
+
+.listing-summary-container{
+  .pager-font-style;
+  float      : right !important;
+  text-align : right;
+  .clearfix();
+}
+
+
+.item-listing-container {
+  .clearfix();
+  &:before{
+    clear: both;
+  }
+}
+
+/*Pager*/

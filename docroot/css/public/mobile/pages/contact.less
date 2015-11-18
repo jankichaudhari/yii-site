@@ -1,0 +1,62 @@
+.contact-page {
+  color : @grey-darker-1;
+  .mobile-page-contact-widget {
+    .block-border();
+    .top-widget-container {
+      .half-width {
+        width : 100%;
+      }
+    }
+  }
+
+  .contact-us {
+    .thumbnail, .info {
+      .separate-block();
+      display : block;
+      img {
+        width : 100%;
+      }
+    }
+    .info {
+      h3 {
+        font-size : 4rem;
+        color     : @orange;
+        padding   : 12px 0 6px 0;
+      }
+
+      .block {
+        padding : 3px 0;
+      }
+
+      .telephone, .email {
+        .block {
+          &:first-child {
+            .displayFloat();
+            padding-right : 4px;
+          }
+          &:last-child {
+            color : @grey-light-0;
+          }
+        }
+      }
+    }
+
+    &:first-child {
+      padding-top : 24px;
+    }
+
+  }
+
+  .widgets {
+    .separate-block();
+  }
+
+  .all-offices {
+    .hide();
+  }
+
+  .opening-hours {
+    padding : 24px 12px;
+  }
+
+}

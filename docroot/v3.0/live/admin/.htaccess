@@ -1,0 +1,4 @@
+RewriteEngine on
+RedirectMatch permanent (.*)\.asp$ $1.php
+ErrorDocument 404 https://www.woosterstock.co.uk/v3.0/live/admin/error_page.php?error=404
+ErrorDocument 500 https://www.woosterstock.co.uk/v3.0/live/admin/error_page.php?error=500
